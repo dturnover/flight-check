@@ -2,7 +2,7 @@
 
 Fixed-trip monitoring for **LAX → URT**, one adult, economy, departing **December 18, 2026 at or after 18:00 Los Angeles time**, returning from URT **January 3, 2027**. Never books or pays for tickets.
 
-**Status:** implementation tested with explicitly synthetic fixtures. Monitoring is disabled. No live fares, route coverage, or actual email/SMS delivery have yet been verified. See [OPERATIONS.md](OPERATIONS.md) for deployment and activation gates and [RESEARCH.md](RESEARCH.md) for costs and provider limitations.
+**Status:** implementation tested with explicitly synthetic fixtures. Monitoring is disabled. No live fares, route coverage, or actual email/SMS delivery have yet been verified. The repository visibility and a flight API key still block automatic collection. See [OPERATIONS.md](OPERATIONS.md) for deployment and activation gates and [RESEARCH.md](RESEARCH.md) for costs and provider limitations.
 
 ## Run locally
 
@@ -24,12 +24,15 @@ Do not put keys in command arguments or source files. Store operational state on
 * Exclude explicitly separate tickets/self-transfers, airport changes, connections under two hours, legs over 60 hours, and departures outside the exact dates/time. Count every rejection in private state to diagnose filter effects. These quality defaults are configurable; their impact on URT coverage needs a live search.
 * Protection is **unknown** for this adapter, never inferred. Activation requires an explicit decision to accept candidates for manual review. If the user declines, a different provider with verifiable ticket terms is required before activation.
 * Compare daily cheapest observations within cohorts defined by stop count, six-hour duration bands, overnight waits, baggage disclosures and protection. Unknown baggage fees remain unknown; prices are not falsely normalized to include bags.
-* After seven observed days in a cohort, alert for at least 15% and $75 below its 30-day median daily minimum; also recognize a 10%/$75 drop for the same itinerary. A first candidate provides a clearly labeled baseline-starting update, not a claimed bargain. Provider historical insights are stored separately and are not treated as this bot's measurements.
+* Provider historical search prices, when returned, are summarized immediately as a separate provisional baseline. With at least three recent historical days, a 15%/$75 discount can qualify for manual review, with an explicit warning that baggage, itinerary quality and protection may differ. Missing history is reported honestly; no past fares are invented.
+* After seven observed days in a cohort, alert for at least 15% and $75 below its 30-day median daily minimum; also recognize a 10%/$75 drop for the same itinerary. A first candidate provides a clearly labeled baseline-starting update, not a claimed bargain. Historical insights remain separate from this bot's measurements.
 * Refresh both selected legs before sending. Re-alert only for an 8%/$75 improvement in that quality cohort, with a global 48-hour cooldown. At most one new alert per run, at most 20 alerts (including tests) per rolling 31 days.
 * Email contains full itinerary, local times, layovers, baggage caveats, unknown protection, seller caveat, and a trip search link. SMS is a short summary pointing to the detailed email. Search links require reselecting and checking the exact itinerary; no seller or ticket terms are certified.
 
 ## Cloud deployment
 
-Public source: `dturnover/flight-check`. Deploy the same code to a **private companion repository**, proposed name `dturnover/flight-watch-runtime`. The workflow deliberately refuses to execute in a public repository. A private `state` branch persists observations, API reservations, health, and notification receipts. No public Actions artifacts contain state. No separate database subscription or cross-repository state token is required.
+Use the existing **`dturnover/flight-check`** repository; no second repository is required. It must be private before the runtime job starts because a private `state` branch holds observations and, once alerts are configured, delivery records. The workflow refuses to run in a public repository. GitHub rejected the agent's attempt to change visibility; the owner needs to change it in Settings.
+
+Once private and supplied with `SERPAPI_KEY`, scheduled baseline collection runs without any email/SMS credentials or protection decision. It checks at 06:17, 14:17 and 22:17 UTC for the first 72 hours after its first successful scheduled observation, then roughly daily. A rolling 31-day cap of 240 attempted search requests applies to manual and scheduled work combined. Alerts remain disabled until their separate requirements are met. The **baseline** workflow command shows provider historical figures and the bot's own cohort statistics separately; latest full itineraries are in private `state.json` under `last_candidates`.
 
 Every side-effect reservation is committed and pushed before its request. A failed push stops the run. GitHub Actions concurrency prevents overlap; a local lock protects local runs. Do not run a second scheduler against the same state. API failures stop the run with a failed Actions status; they are never reported as “no deal.” Uncertain SMS sends are not blindly retried. See the operations guide for recovery.

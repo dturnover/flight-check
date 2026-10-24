@@ -1,6 +1,7 @@
 """Pure fare normalization and explainable comparison logic."""
 import hashlib
 import json
+import math
 import statistics
 from datetime import datetime, timedelta, timezone
 from urllib.parse import urlencode
@@ -80,7 +81,55 @@ def candidate(outbound, inbound, config):
             'seller': 'Not verified; compare airline-direct offers and check ticket terms before paying.'}
 
 
-def reason(fare, observations, alerts, config, now):
+def historical_baseline(insights, now):
+    """Provider search-level history, never claimed as comparable-ticket history."""
+    daily = {}
+    if not isinstance(insights, dict):
+        insights = {}
+    for point in insights.get('price_history', []) or []:
+        if not isinstance(point, (list, tuple)) or len(point) != 2:
+            continue
+        stamp, price = point
+        if any(isinstance(x, bool) or not isinstance(x, (int, float)) or not math.isfinite(x) for x in (stamp, price)) or price <= 0:
+            continue
+        try:
+            date = datetime.fromtimestamp(stamp, timezone.utc)
+        except (ValueError, OverflowError, OSError):
+            continue
+        if not now - timedelta(days=30) <= date <= now:
+            continue
+        day = date.date().isoformat()
+        daily[day] = min(daily.get(day, float('inf')), price)
+    typical = insights.get('typical_price_range')
+    if not (isinstance(typical, list) and len(typical) == 2
+            and all(isinstance(p, (int, float)) and not isinstance(p, bool) and math.isfinite(p) and p > 0 for p in typical)
+            and typical[0] <= typical[1]):
+        typical = None
+    return {'source': 'Google Flights via SerpApi', 'scope': 'provider search-level history; ticket quality, baggage and protection comparability unverified',
+            'days': len(daily), 'median_usd': statistics.median(daily.values()) if daily else None,
+            'lowest_usd': min(daily.values()) if daily else None,
+            'first_date': min(daily) if daily else None, 'last_date': max(daily) if daily else None,
+            'typical_price_range_usd': typical}
+
+
+def baseline_report(candidates, observations, insights, now):
+    history = historical_baseline(insights, now)
+    report = {'generated_at': now.isoformat(), 'historical': history, 'candidates': []}
+    for fare in candidates[:20]:
+        daily = {}
+        for o in observations:
+            if o['cohort'] == fare['cohort'] and now - timedelta(days=30) <= datetime.fromisoformat(o['at']) <= now:
+                day = o['at'][:10]
+                daily[day] = min(daily.get(day, float('inf')), o['price'])
+        report['candidates'].append({'id': fare['id'], 'total_round_trip_usd': fare['price'],
+            'own_comparable_days': len(daily),
+            'own_comparable_median_usd': statistics.median(daily.values()) if daily else None,
+            'percent_below_provider_history': round(100 * (1 - fare['price'] / history['median_usd']), 1) if history['median_usd'] else None,
+            'protection': fare['protection']})
+    return report
+
+
+def reason(fare, observations, alerts, config, now, insights=None):
     relevant = [o for o in observations if o['cohort'] == fare['cohort'] and datetime.fromisoformat(o['at']) >= now - timedelta(days=30)]
     prior_alerts = [a for a in alerts if a.get('kind') != 'test']
     same = [a for a in prior_alerts if a['cohort'] == fare['cohort']]
@@ -104,6 +153,12 @@ def reason(fare, observations, alerts, config, now):
         p = previous[-1]['price']
         if p - fare['price'] >= max(config['minimum_saving_usd'], p * config['drop_discount']):
             return f"Same itinerary dropped from ${p:.0f} to ${fare['price']:.0f}."
+    history = historical_baseline(insights, now)
+    if history['days'] >= 3 and history['last_date'] >= (now - timedelta(days=7)).date().isoformat():
+        baseline = history['median_usd']
+        if baseline - fare['price'] >= max(config['minimum_saving_usd'], baseline * config['baseline_discount']):
+            return (f"{(1-fare['price']/baseline)*100:.0f}% below provider search-history median (${baseline:.0f}, {history['days']} days). "
+                    'Provisional historical comparison: matching baggage, itinerary quality and ticket protection are unverified; this is not the bot\'s own baseline.')
     if not prior_alerts:
         return 'First observed usable candidate for manual review; baseline is collecting. This is NOT yet evidence of an unusually cheap fare.'
     return None

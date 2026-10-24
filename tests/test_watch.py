@@ -209,4 +209,86 @@ class RuntimeTests(unittest.TestCase):
             run(self.config,self.state,Search(self.config,self.state,lambda *a:next(payloads)),Delivery(self.state,lambda *a:self.fail()),True)
 
 
+class HistoryAndScheduleTests(unittest.TestCase):
+    def setUp(self):
+        self.c = copy.deepcopy(CONFIG)
+        self.out, self.ret = fixtures()
+        self.fare = candidate(self.out, self.ret, self.c)
+
+    def history(self, n=7, price=1600):
+        return {'price_history': [[int((NOW-timedelta(days=i+1)).timestamp()), price] for i in range(n)]}
+
+    def test_historical_immediate_comparison(self):
+        text = reason(self.fare, [], [], self.c, NOW, self.history())
+        self.assertIn('25%', text)
+        self.assertIn('provider search-history', text)
+        self.assertIn('unverified', text)
+
+    def test_history_does_not_become_own_observations(self):
+        from flight_watch.core import baseline_report
+        observations = []
+        report = baseline_report([self.fare], observations, self.history(), NOW)
+        self.assertEqual(observations, [])
+        self.assertEqual(report['candidates'][0]['own_comparable_days'], 0)
+        self.assertEqual(report['historical']['days'], 7)
+
+    def test_historical_daily_deduplication(self):
+        from flight_watch.core import historical_baseline
+        points = self.history(3)
+        points['price_history'] += points['price_history'] * 20
+        summary = historical_baseline(points, NOW)
+        self.assertEqual(summary['days'], 3)
+        self.assertEqual(summary['median_usd'], 1600)
+
+    def test_bad_future_and_stale_history_ignored(self):
+        from flight_watch.core import historical_baseline
+        points = self.history(1)
+        points['price_history'] += [[NOW.timestamp()+86400, 500], [NOW.timestamp()-86400*90, 500], [True, 1500], [NOW.timestamp(), float('nan')], ['bad', 500], [NOW.timestamp(), -1], None]
+        result = historical_baseline(points, NOW)
+        self.assertEqual(result['days'], 1)
+        self.assertEqual(result['median_usd'], 1600)
+
+    def test_insufficient_history_no_false_bargain(self):
+        self.assertIn('NOT yet', reason(self.fare, [], [], self.c, NOW, self.history(2)))
+
+    def test_old_history_no_bargain_alert(self):
+        points = {'price_history': [[int((NOW-timedelta(days=i+10)).timestamp()),1600] for i in range(7)]}
+        self.assertIn('NOT yet',reason(self.fare,[],[],self.c,NOW,points))
+
+    def test_schedule_baseline_needs_no_messaging(self):
+        from flight_watch.__main__ import scheduled
+        with tempfile.TemporaryDirectory() as d:
+            state=State(d)
+            with patch('flight_watch.__main__.now_utc',return_value=NOW), patch('flight_watch.__main__.run',return_value='observed') as runner:
+                scheduled(self.c,state,None,None)
+                self.assertFalse(runner.call_args.args[-1])
+                self.assertEqual(state.data['baseline_started_at'],NOW.isoformat())
+
+    def test_schedule_transitions_to_daily(self):
+        from flight_watch.__main__ import scheduled
+        with tempfile.TemporaryDirectory() as d:
+            state=State(d)
+            state.data.update(baseline_started_at=(NOW-timedelta(days=4)).isoformat(),last_scheduled_observation_at=(NOW-timedelta(hours=8)).isoformat())
+            with patch('flight_watch.__main__.now_utc',return_value=NOW), patch('flight_watch.__main__.run') as runner:
+                self.assertIn('not due',scheduled(self.c,state,None,None))
+                runner.assert_not_called()
+
+    def test_initial_three_daily_checks(self):
+        from flight_watch.__main__ import scheduled
+        with tempfile.TemporaryDirectory() as d:
+            state=State(d)
+            state.data.update(baseline_started_at=(NOW-timedelta(days=1)).isoformat(),last_scheduled_observation_at=(NOW-timedelta(hours=8)).isoformat())
+            with patch('flight_watch.__main__.now_utc',return_value=NOW), patch('flight_watch.__main__.run',return_value='observed') as runner:
+                scheduled(self.c,state,None,None)
+                runner.assert_called_once()
+
+    def test_schedule_failure_does_not_start_baseline_clock(self):
+        from flight_watch.__main__ import scheduled
+        with tempfile.TemporaryDirectory() as d:
+            state=State(d)
+            with patch('flight_watch.__main__.run',side_effect=Failure('no key')):
+                with self.assertRaises(Failure): scheduled(self.c,state,None,None)
+            self.assertNotIn('baseline_started_at',state.data)
+
+
 if __name__ == '__main__': unittest.main()

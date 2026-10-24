@@ -7,7 +7,7 @@ from collections import Counter
 from datetime import datetime, timedelta
 from pathlib import Path
 from zoneinfo import ZoneInfo
-from .core import candidate, digest, leg, message, reason, rows
+from .core import baseline_report, candidate, digest, leg, message, reason, rows
 from .runtime import Delivery, Failure, Search, State, delivered, now_utc
 
 
@@ -90,13 +90,16 @@ def run(config, state, search, delivery, notify):
     state.save()
     if not results:
         raise Failure('Search completed but found no usable complete round trips; inspect private rejection counts. Route coverage is unverified.')
+    state.data['baseline_report'] = baseline_report([f for f, _ in results], state.data['observations'],
+        state.data['last_search']['provider_price_insights'], now)
+    state.save()
     if not notify:
         return f"observed {len(results)} complete candidates; no notifications requested"
     alerts = [a for a in state.data['alerts'] if datetime.fromisoformat(a['at']) >= now - timedelta(days=31)]
     if len(alerts) >= config['max_alerts_per_rolling_31_days']:
         raise Failure('Notification budget reached; observations saved but further alerts paused.')
     for fare, outbound in results:
-        why = reason(fare, prior, state.data['alerts'], config, now)
+        why = reason(fare, prior, state.data['alerts'], config, now, state.data['last_search']['provider_price_insights'])
         if not why:
             continue
         # Two fresh requests: regenerate the outbound token, then reselect this return.
@@ -119,7 +122,7 @@ def run(config, state, search, delivery, notify):
                 continue
         if not refreshed:
             raise Failure('Promising fare disappeared during refresh; no alert sent.')
-        why = reason(refreshed, prior, state.data['alerts'], config, now)
+        why = reason(refreshed, prior, state.data['alerts'], config, now, refreshed_out.get('price_insights', {}))
         if not why:
             return 'price changed on refresh; no longer qualifies'
         fare = refreshed
@@ -138,9 +141,30 @@ def run(config, state, search, delivery, notify):
     return 'observations saved; no qualifying deal'
 
 
+def scheduled(config, state, search, delivery):
+    """Three checks/day for the first 72 hours, then roughly daily; no messaging dependency."""
+    now = now_utc()
+    if not config.get('baseline_collection_enabled', False):
+        return 'baseline collection disabled'
+    started = state.data.get('baseline_started_at')
+    collecting = started is None or now - datetime.fromisoformat(started) < timedelta(hours=72)
+    last = state.data.get('last_scheduled_observation_at')
+    interval = timedelta(hours=7 if collecting else 23)
+    if last and now - datetime.fromisoformat(last) < interval:
+        return 'next scheduled observation not due'
+    # Baseline collection must work before messaging setup or protection consent.
+    # Paid messaging still requires its independent gates when explicitly enabled.
+    status = run(config, state, search, delivery, bool(config['enabled']))
+    if status not in ('stopped', 'disabled'):
+        state.data.setdefault('baseline_started_at', now.isoformat())
+        state.data['last_scheduled_observation_at'] = now.isoformat()
+        state.save()
+    return status
+
+
 def main():
     parser = argparse.ArgumentParser()
-    parser.add_argument('command', choices=['observe', 'monitor', 'test-delivery', 'receipts', 'health', 'stop'])
+    parser.add_argument('command', choices=['observe', 'monitor', 'scheduled', 'baseline', 'test-delivery', 'receipts', 'health', 'stop'])
     parser.add_argument('--config', default='config.json')
     parser.add_argument('--state-dir', default='state')
     parser.add_argument('--persist-git', action='store_true')
@@ -165,6 +189,14 @@ def main():
                 last = state.data['runs'][-1] if state.data['runs'] else {}
                 print(json.dumps({'last_run': last, 'stopped': state.data['stopped'], 'observations': len(state.data['observations']), 'search_calls': len(state.data['calls'])}))
                 return
+            elif args.command == 'baseline':
+                report = state.data.get('baseline_report')
+                if not report:
+                    raise Failure('No baseline yet: a successful live observe or scheduled run is required.')
+                print(json.dumps(report, indent=2))
+                return
+            elif args.command == 'scheduled':
+                status = scheduled(config, state, Search(config, state), delivery)
             elif args.command == 'receipts':
                 delivery.require()
                 delivery.reconcile()
