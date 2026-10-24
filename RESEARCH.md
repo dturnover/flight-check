@@ -14,7 +14,7 @@ Duffel's pricing page returned HTTP 403 in this environment, so current Duffel p
 
 ## Hosting and private state
 
-GitHub Actions in a private companion repository; approximately 31 scheduled jobs/month, bounded by a 20-minute timeout (620 minutes maximum scheduled allocation, usually much less). GitHub Free normally includes 2,000 private-repository minutes/month, shared with the account's other jobs. Verify remaining allowance and set the account Actions spending limit to $0. A workflow timeout is a maximum, not a runtime measurement. Small private Git state replaces ephemeral caches/artifacts as durable history.
+GitHub Actions in a private companion repository; approximately 31 scheduled jobs/month, bounded by a 20-minute timeout (620 minutes maximum scheduled allocation, usually much less). [GitHub billing documentation](https://docs.github.com/en/billing/managing-billing-for-your-products/managing-billing-for-github-actions/about-billing-for-github-actions) was not reachable from this environment. GitHub Free normally includes 2,000 private-repository minutes/month, shared with the account's other jobs. Verify remaining allowance and set the account Actions spending limit to $0. A workflow timeout is a maximum, not a runtime measurement. Small private Git state replaces ephemeral caches/artifacts as durable history.
 
 Schedule: **14:17 UTC daily** (07:17 PDT / 06:17 PST). Up to 24 hours between scheduled checks, plus provider and GitHub queue delay. GitHub schedules are best effort and can be delayed or dropped; there is no instant-alert or uptime guarantee. Inspect Actions failures and last successful observation. An external heartbeat service would be required to detect a scheduler that never launches; none is configured.
 

@@ -58,6 +58,7 @@ def collect(config, state, search):
         'complete_candidates': len(results), 'rejections': dict(rejected),
         # Provider insights are contextual, not our baseline or exact-itinerary history.
         'provider_price_insights': initial.get('price_insights', {}), 'protection': 'unknown'}
+    state.data['last_candidates'] = [dict(fare, observed_at=now_utc().isoformat()) for fare, _ in sorted(results, key=lambda pair: pair[0]['price'])[:20]]
     state.save()
     return sorted(results, key=lambda pair: pair[0]['price'])
 
