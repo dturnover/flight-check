@@ -1,0 +1,15 @@
+{
+  "origin": "LAX", "destination": "URT",
+  "outbound_date": "2026-12-18", "outbound_after": "18:00",
+  "return_date": "2027-01-03", "adults": 1,
+  "currency": "USD", "market": "us", "cabin": 1,
+  "enabled": false, "allow_unknown_protection": null,
+  "outbound_choices": 4, "max_api_calls_per_run": 7,
+  "max_api_calls_per_rolling_31_days": 240,
+  "max_alerts_per_rolling_31_days": 20,
+  "minimum_connection_minutes": 120,
+  "max_leg_hours": 60, "baseline_min_days": 7,
+  "baseline_discount": 0.15, "drop_discount": 0.10,
+  "minimum_saving_usd": 75, "realert_discount": 0.08,
+  "cooldown_hours": 48
+}
