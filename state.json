@@ -27,6 +27,11 @@
       "command": "observe",
       "reason": "Flight search failed or did not complete: Google Flights hasn't returned any results for this query.",
       "status": "failed"
+    },
+    {
+      "at": "2026-10-25T20:48:35.210725+00:00",
+      "command": "probe",
+      "status": "probed"
     }
   ],
   "stopped": false,
