@@ -78,7 +78,9 @@ class Search:
                   'outbound_times': '18,23', 'show_hidden': 'true', 'deep_search': 'true', **extra}
         result = self.transport('https://serpapi.com/search.json?' + urllib.parse.urlencode(params))
         if result.get('error') or result.get('search_metadata', {}).get('status') != 'Success':
-            raise Failure('Flight search failed or did not complete; see provider console privately.')
+            # SerpApi's error text describes the query, not the key, so it is safe to log.
+            detail = str(result.get('error') or result.get('search_metadata', {}).get('status'))[:200]
+            raise Failure(f'Flight search failed or did not complete: {detail}')
         return result
 
 
