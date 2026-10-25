@@ -18,8 +18,7 @@ concurrency:
 jobs:
   watch:
     # Baseline collection is independent of notification activation.
-    # State remains private because it can later contain delivery receipts.
-    if: github.event.repository.private
+    # The owner accepted a public repository, so the state branch is public too.
     runs-on: ubuntu-latest
     timeout-minutes: 20
     steps:
@@ -53,7 +52,7 @@ jobs:
           FLIGHT_WATCH_ENABLED: ${{ vars.FLIGHT_WATCH_ENABLED }}
           ALLOW_UNKNOWN_PROTECTION: ${{ vars.ALLOW_UNKNOWN_PROTECTION }}
           MESSAGING_COST_APPROVED: ${{ vars.MESSAGING_COST_APPROVED }}
-          SERPAPI_KEY: ${{ secrets.SERPAPI_KEY }}
+          SERPAPI_KEY: ${{ secrets.SERPAPI }}
           RESEND_API_KEY: ${{ secrets.RESEND_API_KEY }}
           ALERT_FROM: ${{ secrets.ALERT_FROM }}
           ALERT_EMAIL: ${{ secrets.ALERT_EMAIL }}
