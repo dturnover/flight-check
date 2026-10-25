@@ -4,7 +4,14 @@
     "2026-10-25T20:43:05.805903+00:00"
   ],
   "observations": [],
-  "runs": [],
+  "runs": [
+    {
+      "at": "2026-10-25T20:43:05.796906+00:00",
+      "command": "observe",
+      "reason": "Flight search failed or did not complete; see provider console privately.",
+      "status": "failed"
+    }
+  ],
   "stopped": false,
   "version": 1
 }
