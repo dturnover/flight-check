@@ -75,7 +75,7 @@ class Search:
                   'departure_id': self.config['origin'], 'arrival_id': self.config['destination'],
                   'outbound_date': self.config['outbound_date'], 'return_date': self.config['return_date'],
                   'adults': 1, 'travel_class': 1, 'currency': 'USD', 'gl': 'us', 'hl': 'en',
-                  'outbound_times': '18,23', 'show_hidden': 'true', 'deep_search': 'true', **extra}
+                  'show_hidden': 'true', 'deep_search': 'true', **extra}
         result = self.transport('https://serpapi.com/search.json?' + urllib.parse.urlencode(params))
         if result.get('error') or result.get('search_metadata', {}).get('status') != 'Success':
             # SerpApi's error text describes the query, not the key, so it is safe to log.
