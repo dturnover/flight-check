@@ -9,7 +9,7 @@ on:
         required: true
         default: health
         type: choice
-        options: [health, baseline, observe, test-delivery, receipts, monitor, stop]
+        options: [health, baseline, observe, test-delivery, receipts, monitor, stop, probe]
 permissions:
   contents: write
 concurrency:

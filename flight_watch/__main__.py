@@ -164,7 +164,7 @@ def scheduled(config, state, search, delivery):
 
 def main():
     parser = argparse.ArgumentParser()
-    parser.add_argument('command', choices=['observe', 'monitor', 'scheduled', 'baseline', 'test-delivery', 'receipts', 'health', 'stop'])
+    parser.add_argument('command', choices=['observe', 'monitor', 'scheduled', 'baseline', 'test-delivery', 'receipts', 'health', 'stop', 'probe'])
     parser.add_argument('--config', default='config.json')
     parser.add_argument('--state-dir', default='state')
     parser.add_argument('--persist-git', action='store_true')
@@ -195,6 +195,19 @@ def main():
                     raise Failure('No baseline yet: a successful live observe or scheduled run is required.')
                 print(json.dumps(report, indent=2))
                 return
+            elif args.command == 'probe':
+                # Diagnose empty route coverage: result counts only, through the same quota.
+                search = Search(config, state)
+                variants = {'LAX-URT plain': {'deep_search': 'false', 'show_hidden': 'false'},
+                            'LAX-BKK': {'arrival_id': 'BKK'},
+                            'BKK-URT': {'departure_id': 'BKK'}}
+                for name, extra in variants.items():
+                    try:
+                        r = search.query(**extra)
+                        print(name, len(r.get('best_flights', [])) + len(r.get('other_flights', [])), 'results')
+                    except Failure as exc:
+                        print(name, exc)
+                status = 'probed'
             elif args.command == 'scheduled':
                 status = scheduled(config, state, Search(config, state), delivery)
             elif args.command == 'receipts':
