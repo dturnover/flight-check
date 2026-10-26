@@ -3534,6 +3534,11 @@
       "at": "2026-10-26T13:04:42.513103+00:00",
       "command": "scheduled",
       "status": "observed 96 complete candidates; no notifications requested"
+    },
+    {
+      "at": "2026-10-26T19:57:11.396762+00:00",
+      "command": "scheduled",
+      "status": "next scheduled observation not due"
     }
   ],
   "stopped": false,
