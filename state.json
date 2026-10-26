@@ -178,6 +178,7 @@
       ]
     }
   },
+  "baseline_started_at": "2026-10-26T13:04:42.513123+00:00",
   "calls": [
     "2026-10-25T20:43:05.805903+00:00",
     "2026-10-25T20:44:54.814842+00:00",
@@ -2198,6 +2199,7 @@
       "seller": "Not verified; compare airline-direct offers and check ticket terms before paying."
     }
   ],
+  "last_scheduled_observation_at": "2026-10-26T13:04:42.513123+00:00",
   "last_search": {
     "at": "2026-10-26T13:05:20.954144+00:00",
     "complete_candidates": 96,
