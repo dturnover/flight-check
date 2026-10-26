@@ -12,7 +12,7 @@ from .runtime import Delivery, Failure, Search, State, delivered, now_utc
 
 
 def validate(c):
-    expected = {'origin': 'LAX', 'destination': 'URT', 'outbound_date': '2026-12-18',
+    expected = {'origin': 'LAX', 'destination': 'BKK', 'outbound_date': '2026-12-18',
                 'outbound_after': '18:00', 'return_date': '2027-01-03', 'adults': 1,
                 'currency': 'USD', 'market': 'us', 'cabin': 1}
     if any(c.get(k) != v for k, v in expected.items()):
@@ -29,7 +29,7 @@ def collect(config, state, search):
     usable = []
     for raw in rows(initial):
         try:
-            leg(raw, 'LAX', 'URT', config['outbound_date'], config, True)
+            leg(raw, config['origin'], config['destination'], config['outbound_date'], config, True)
             if raw.get('departure_token'):
                 usable.append(raw)
             else:
@@ -107,7 +107,7 @@ def run(config, state, search, delivery, notify):
         refreshed = None
         for o in rows(refreshed_out):
             try:
-                if leg(o, 'LAX', 'URT', config['outbound_date'], config, True)['segments'] == fare['outbound']['segments'] and o.get('departure_token'):
+                if leg(o, config['origin'], config['destination'], config['outbound_date'], config, True)['segments'] == fare['outbound']['segments'] and o.get('departure_token'):
                     returning = search.query(departure_token=o['departure_token'], no_cache='true')
                     for r in rows(returning):
                         try:
@@ -130,7 +130,7 @@ def run(config, state, search, delivery, notify):
                  'id': fare['id'], 'cohort': fare['cohort'], 'price': fare['price'], 'at': now.isoformat(),
                  'subject': f"Flight Watch: ${fare['price']:.0f} round trip (manual review)",
                  'body': message(fare, why, config),
-                 'sms': f"Flight Watch: USD {fare['price']:.0f} total round trip, 1 adult LAX-URT Dec 18 after 6pm / Jan 3. Protection UNKNOWN: manual review. Full itinerary, baggage caveats and search link in your email. " + why,
+                 'sms': f"Flight Watch: USD {fare['price']:.0f} total round trip, 1 adult {config['origin']}-{config['destination']} Dec 18 after 6pm / Jan 3. Protection UNKNOWN: manual review. Full itinerary, baggage caveats and search link in your email. " + why,
                  'receipts': {}}
         # Force short GSM-compatible SMS to bound segment costs (max 3 segments).
         alert['sms'] = alert['sms'].encode('ascii', 'replace').decode()[:450]
@@ -198,9 +198,7 @@ def main():
             elif args.command == 'probe':
                 # Diagnose empty route coverage: result counts only, through the same quota.
                 search = Search(config, state)
-                variants = {'LAX-URT plain': {'deep_search': 'false', 'show_hidden': 'false'},
-                            'LAX-BKK': {'arrival_id': 'BKK'},
-                            'BKK-URT': {'departure_id': 'BKK'}}
+                variants = {'LAX-URT': {'arrival_id': 'URT'}, 'BKK-URT': {'departure_id': 'BKK', 'arrival_id': 'URT'}}
                 for name, extra in variants.items():
                     try:
                         r = search.query(**extra)

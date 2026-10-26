@@ -21,11 +21,11 @@ def segment(a, b, depart, arrive, number):
 
 def fixtures():
     # Deliberately synthetic; never used by runtime or presented as live quotes.
-    out = {'flights': [segment('LAX', 'BKK', '2026-12-18 18:00', '2026-12-20 06:00', 'TEST1'),
-                       segment('BKK', 'URT', '2026-12-20 09:00', '2026-12-20 10:00', 'TEST2')],
+    out = {'flights': [segment('LAX', 'TPE', '2026-12-18 18:00', '2026-12-20 01:00', 'TEST1'),
+                       segment('TPE', 'BKK', '2026-12-20 04:00', '2026-12-20 06:00', 'TEST2')],
            'total_duration': 2400, 'price': 999, 'type': 'Round trip', 'departure_token': 'TEST-out'}
-    ret = {'flights': [segment('URT', 'BKK', '2027-01-03 08:00', '2027-01-03 09:00', 'TEST3'),
-                       segment('BKK', 'LAX', '2027-01-03 12:00', '2027-01-03 17:00', 'TEST4')],
+    ret = {'flights': [segment('BKK', 'TPE', '2027-01-03 08:00', '2027-01-03 12:00', 'TEST3'),
+                       segment('TPE', 'LAX', '2027-01-03 15:00', '2027-01-03 17:00', 'TEST4')],
            'total_duration': 2100, 'price': 1200, 'type': 'Round trip', 'booking_token': 'TEST-book'}
     return out, ret
 
@@ -58,7 +58,7 @@ class FareTests(unittest.TestCase):
         with self.assertRaises(ValueError): self.fare()
 
     def test_no_substitute_destination(self):
-        self.out['flights'][-1]['arrival_airport']['id'] = 'BKK'
+        self.out['flights'][-1]['arrival_airport']['id'] = 'URT'
         with self.assertRaises(ValueError): self.fare()
 
     def test_known_self_transfer_nested(self):

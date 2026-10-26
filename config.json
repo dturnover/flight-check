@@ -1,5 +1,5 @@
 {
-  "origin": "LAX", "destination": "URT",
+  "origin": "LAX", "destination": "BKK",
   "outbound_date": "2026-12-18", "outbound_after": "18:00",
   "return_date": "2027-01-03", "adults": 1,
   "currency": "USD", "market": "us", "cabin": 1,

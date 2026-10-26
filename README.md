@@ -1,6 +1,6 @@
 # Flight Watch
 
-Fixed-trip monitoring for **LAX → URT**, one adult, economy, departing **December 18, 2026 at or after 18:00 Los Angeles time**, returning from URT **January 3, 2027**. Never books or pays for tickets.
+Fixed-trip monitoring for **LAX ↔ BKK**, one adult, economy, departing **December 18, 2026 at or after 18:00 Los Angeles time**, returning from BKK **January 3, 2027**. Google Flights sells no single ticket to URT, so the BKK ↔ URT hop is booked separately; `probe` checks both. Never books or pays for tickets.
 
 **Status:** implementation tested with explicitly synthetic fixtures. Monitoring is disabled. No live fares, route coverage, or actual email/SMS delivery have yet been verified. The repository visibility and a flight API key still block automatic collection. See [OPERATIONS.md](OPERATIONS.md) for deployment and activation gates and [RESEARCH.md](RESEARCH.md) for costs and provider limitations.
 
@@ -21,7 +21,7 @@ Do not put keys in command arguments or source files. Store operational state on
 
 * Search complete round trips using SerpApi's documented outbound-selection/return-selection flow. The selected return's price is the total round-trip price; outbound and return totals are never added.
 * Examine all returned inbound choices for up to four outbound choices. Keep the cheapest two outbounds and rotate two other choices over successive runs. This is bounded sampling, not exhaustive coverage.
-* Exclude explicitly separate tickets/self-transfers, airport changes, connections under two hours, legs over 60 hours, and departures outside the exact dates/time. Count every rejection in private state to diagnose filter effects. These quality defaults are configurable; their impact on URT coverage needs a live search.
+* Exclude explicitly separate tickets/self-transfers, airport changes, connections under two hours, legs over 60 hours, and departures outside the exact dates/time. Count every rejection in private state to diagnose filter effects. These quality defaults are configurable; check `last_search.rejections` after live runs.
 * Protection is **unknown** for this adapter, never inferred. Activation requires an explicit decision to accept candidates for manual review. If the user declines, a different provider with verifiable ticket terms is required before activation.
 * Compare daily cheapest observations within cohorts defined by stop count, six-hour duration bands, overnight waits, baggage disclosures and protection. Unknown baggage fees remain unknown; prices are not falsely normalized to include bags.
 * Provider historical search prices, when returned, are summarized immediately as a separate provisional baseline. With at least three recent historical days, a 15%/$75 discount can qualify for manual review, with an explicit warning that baggage, itinerary quality and protection may differ. Missing history is reported honestly; no past fares are invented.
