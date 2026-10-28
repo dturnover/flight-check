@@ -4,172 +4,156 @@
     "candidates": [
       {
         "id": "82bf030a7b21dbf56a00c747",
-        "own_comparable_days": 2,
-        "own_comparable_median_usd": 7207.0,
-        "percent_below_provider_history": -35.3,
+        "own_comparable_days": 3,
+        "own_comparable_median_usd": 3725.0,
+        "percent_below_provider_history": -40.8,
         "protection": "unknown",
-        "total_round_trip_usd": 3539.0
+        "total_round_trip_usd": 3725.0
       },
       {
         "id": "92ddb6c552024523461f4da9",
-        "own_comparable_days": 2,
-        "own_comparable_median_usd": 3317.5,
-        "percent_below_provider_history": -35.3,
+        "own_comparable_days": 3,
+        "own_comparable_median_usd": 3539.0,
+        "percent_below_provider_history": -40.8,
         "protection": "unknown",
-        "total_round_trip_usd": 3539.0
-      },
-      {
-        "id": "80e2511caad8b6662f24ee2c",
-        "own_comparable_days": 2,
-        "own_comparable_median_usd": 6295.5,
-        "percent_below_provider_history": -52.6,
-        "protection": "unknown",
-        "total_round_trip_usd": 3990.0
-      },
-      {
-        "id": "4f4b8cad9d740bc3083109f7",
-        "own_comparable_days": 2,
-        "own_comparable_median_usd": 3817.0,
-        "percent_below_provider_history": -52.6,
-        "protection": "unknown",
-        "total_round_trip_usd": 3990.0
-      },
-      {
-        "id": "60101368c748454e72b6885f",
-        "own_comparable_days": 2,
-        "own_comparable_median_usd": 3767.5,
-        "percent_below_provider_history": -52.6,
-        "protection": "unknown",
-        "total_round_trip_usd": 3990.0
-      },
-      {
-        "id": "48694406fa4a188c224a5a81",
-        "own_comparable_days": 2,
-        "own_comparable_median_usd": 3764.5,
-        "percent_below_provider_history": -52.6,
-        "protection": "unknown",
-        "total_round_trip_usd": 3990.0
-      },
-      {
-        "id": "a6c153eb69d57a3aaf00e284",
-        "own_comparable_days": 2,
-        "own_comparable_median_usd": 3831.5,
-        "percent_below_provider_history": -53.7,
-        "protection": "unknown",
-        "total_round_trip_usd": 4019.0
-      },
-      {
-        "id": "c30e80f2376f6b2c7956ae46",
-        "own_comparable_days": 2,
-        "own_comparable_median_usd": 3817.0,
-        "percent_below_provider_history": -53.7,
-        "protection": "unknown",
-        "total_round_trip_usd": 4019.0
-      },
-      {
-        "id": "b7460dd6c6bd0a69f48f7ff5",
-        "own_comparable_days": 2,
-        "own_comparable_median_usd": 3779.0,
-        "percent_below_provider_history": -53.7,
-        "protection": "unknown",
-        "total_round_trip_usd": 4019.0
-      },
-      {
-        "id": "8258bec2f7b8224179c2b21f",
-        "own_comparable_days": 2,
-        "own_comparable_median_usd": 3764.5,
-        "percent_below_provider_history": -53.7,
-        "protection": "unknown",
-        "total_round_trip_usd": 4019.0
+        "total_round_trip_usd": 3725.0
       },
       {
         "id": "f5d7bebf76f3c55c047405ef",
-        "own_comparable_days": 2,
-        "own_comparable_median_usd": 3817.0,
-        "percent_below_provider_history": -55.5,
+        "own_comparable_days": 3,
+        "own_comparable_median_usd": 3805.0,
+        "percent_below_provider_history": -43.9,
         "protection": "unknown",
-        "total_round_trip_usd": 4066.0
+        "total_round_trip_usd": 3805.0
       },
       {
-        "id": "17b1f8fd1aa144e5687b9997",
-        "own_comparable_days": 2,
-        "own_comparable_median_usd": 3817.0,
-        "percent_below_provider_history": -56.6,
+        "id": "857b1b768d7273bb86c4dbd6",
+        "own_comparable_days": 3,
+        "own_comparable_median_usd": 3805.0,
+        "percent_below_provider_history": -43.9,
         "protection": "unknown",
-        "total_round_trip_usd": 4095.0
+        "total_round_trip_usd": 3805.0
       },
       {
-        "id": "36591aba39346a6de41fcbdd",
-        "own_comparable_days": 2,
-        "own_comparable_median_usd": 3831.5,
-        "percent_below_provider_history": -56.6,
+        "id": "80e2511caad8b6662f24ee2c",
+        "own_comparable_days": 3,
+        "own_comparable_median_usd": 4200.0,
+        "percent_below_provider_history": -58.8,
         "protection": "unknown",
-        "total_round_trip_usd": 4095.0
+        "total_round_trip_usd": 4200.0
       },
       {
-        "id": "4a1f05ec288adfd2a516a468",
-        "own_comparable_days": 2,
-        "own_comparable_median_usd": 3817.0,
-        "percent_below_provider_history": -56.6,
+        "id": "4f4b8cad9d740bc3083109f7",
+        "own_comparable_days": 3,
+        "own_comparable_median_usd": 3805.0,
+        "percent_below_provider_history": -58.8,
         "protection": "unknown",
-        "total_round_trip_usd": 4095.0
+        "total_round_trip_usd": 4200.0
       },
       {
-        "id": "251d716a8dabb89e9b99875e",
-        "own_comparable_days": 2,
+        "id": "48694406fa4a188c224a5a81",
+        "own_comparable_days": 3,
+        "own_comparable_median_usd": 3805.0,
+        "percent_below_provider_history": -58.8,
+        "protection": "unknown",
+        "total_round_trip_usd": 4200.0
+      },
+      {
+        "id": "c30e80f2376f6b2c7956ae46",
+        "own_comparable_days": 3,
+        "own_comparable_median_usd": 3805.0,
+        "percent_below_provider_history": -59.9,
+        "protection": "unknown",
+        "total_round_trip_usd": 4230.0
+      },
+      {
+        "id": "67e7ca0afe8506f5ca4755b2",
+        "own_comparable_days": 3,
+        "own_comparable_median_usd": 3805.0,
+        "percent_below_provider_history": -61.8,
+        "protection": "unknown",
+        "total_round_trip_usd": 4280.0
+      },
+      {
+        "id": "6bf8a9721361daded180d005",
+        "own_comparable_days": 3,
+        "own_comparable_median_usd": 3805.0,
+        "percent_below_provider_history": -61.8,
+        "protection": "unknown",
+        "total_round_trip_usd": 4280.0
+      },
+      {
+        "id": "05a5a39a5b163f58a5bfdad9",
+        "own_comparable_days": 3,
+        "own_comparable_median_usd": 10875.0,
+        "percent_below_provider_history": -68.5,
+        "protection": "unknown",
+        "total_round_trip_usd": 4456.0
+      },
+      {
+        "id": "bcdb8d45d643d0a60ab7e4d4",
+        "own_comparable_days": 3,
+        "own_comparable_median_usd": 3539.0,
+        "percent_below_provider_history": -68.5,
+        "protection": "unknown",
+        "total_round_trip_usd": 4456.0
+      },
+      {
+        "id": "3f230af26b0db52a93f905cb",
+        "own_comparable_days": 3,
         "own_comparable_median_usd": 4095.0,
-        "percent_below_provider_history": -56.6,
+        "percent_below_provider_history": -76.0,
         "protection": "unknown",
-        "total_round_trip_usd": 4095.0
+        "total_round_trip_usd": 4656.0
       },
       {
-        "id": "a484cf3b07b0a787e5722556",
-        "own_comparable_days": 2,
+        "id": "b8f406b8525efe22aaaf64bb",
+        "own_comparable_days": 3,
         "own_comparable_median_usd": 4095.0,
-        "percent_below_provider_history": -56.6,
+        "percent_below_provider_history": -76.0,
         "protection": "unknown",
-        "total_round_trip_usd": 4095.0
+        "total_round_trip_usd": 4656.0
       },
       {
-        "id": "98c90b71951c202c07e0dfe3",
-        "own_comparable_days": 2,
-        "own_comparable_median_usd": 4078.0,
-        "percent_below_provider_history": -56.6,
+        "id": "6647733c8b8f8a5fe95ac647",
+        "own_comparable_days": 3,
+        "own_comparable_median_usd": 3990.0,
+        "percent_below_provider_history": -76.0,
         "protection": "unknown",
-        "total_round_trip_usd": 4095.0
+        "total_round_trip_usd": 4656.0
       },
       {
-        "id": "8438a9d80a05b700afec76c6",
-        "own_comparable_days": 2,
+        "id": "06047ff6aa98a46051003187",
+        "own_comparable_days": 3,
+        "own_comparable_median_usd": 3805.0,
+        "percent_below_provider_history": -76.0,
+        "protection": "unknown",
+        "total_round_trip_usd": 4656.0
+      },
+      {
+        "id": "cfd7d1e27a110670c2d25fe6",
+        "own_comparable_days": 3,
         "own_comparable_median_usd": 4095.0,
-        "percent_below_provider_history": -56.6,
+        "percent_below_provider_history": -82.8,
         "protection": "unknown",
-        "total_round_trip_usd": 4095.0
+        "total_round_trip_usd": 4836.0
       },
       {
-        "id": "e8beb9b3220e098c792882b7",
-        "own_comparable_days": 2,
-        "own_comparable_median_usd": 4078.0,
-        "percent_below_provider_history": -56.6,
+        "id": "766e4be789343604b905b221",
+        "own_comparable_days": 3,
+        "own_comparable_median_usd": 3805.0,
+        "percent_below_provider_history": -82.8,
         "protection": "unknown",
-        "total_round_trip_usd": 4095.0
-      },
-      {
-        "id": "f6bd024f8e6044dca9aacf0a",
-        "own_comparable_days": 2,
-        "own_comparable_median_usd": 4095.0,
-        "percent_below_provider_history": -56.6,
-        "protection": "unknown",
-        "total_round_trip_usd": 4095.0
+        "total_round_trip_usd": 4836.0
       }
     ],
-    "generated_at": "2026-10-27T19:26:12.113792+00:00",
+    "generated_at": "2026-10-28T12:55:45.329503+00:00",
     "historical": {
       "days": 30,
-      "first_date": "2026-09-28",
-      "last_date": "2026-10-27",
+      "first_date": "2026-09-29",
+      "last_date": "2026-10-28",
       "lowest_usd": 2051,
-      "median_usd": 2615.5,
+      "median_usd": 2645.0,
       "scope": "provider search-level history; ticket quality, baggage and protection comparability unverified",
       "source": "Google Flights via SerpApi",
       "typical_price_range_usd": [
