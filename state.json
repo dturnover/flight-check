@@ -3,45 +3,61 @@
   "baseline_report": {
     "candidates": [
       {
-        "id": "06be5b19a533d33907f9a239",
+        "id": "9e54e32084a5c2b62132f5f1",
         "own_comparable_days": 1,
-        "own_comparable_median_usd": 3138.0,
-        "percent_below_provider_history": -18.8,
+        "own_comparable_median_usd": 3586.0,
+        "percent_below_provider_history": -33.3,
         "protection": "unknown",
-        "total_round_trip_usd": 3138.0
+        "total_round_trip_usd": 3586.0
       },
       {
-        "id": "2ebd288c90798f8a4b7a6601",
+        "id": "0dbcdfa4bdba4c0e4dcd2685",
         "own_comparable_days": 1,
-        "own_comparable_median_usd": 3333.0,
-        "percent_below_provider_history": -26.2,
+        "own_comparable_median_usd": 3586.0,
+        "percent_below_provider_history": -33.3,
         "protection": "unknown",
-        "total_round_trip_usd": 3333.0
+        "total_round_trip_usd": 3586.0
       },
       {
-        "id": "7fe7558a9c2e668def1c2130",
+        "id": "d8392b11891a7c756391b36e",
         "own_comparable_days": 1,
-        "own_comparable_median_usd": 3138.0,
-        "percent_below_provider_history": -35.8,
+        "own_comparable_median_usd": 3586.0,
+        "percent_below_provider_history": -33.3,
         "protection": "unknown",
-        "total_round_trip_usd": 3589.0
+        "total_round_trip_usd": 3586.0
       },
       {
-        "id": "d2f17ea435cf6754a495936d",
+        "id": "5c098063f51db6d56f0c8b01",
         "own_comparable_days": 1,
-        "own_comparable_median_usd": 3333.0,
-        "percent_below_provider_history": -44.1,
+        "own_comparable_median_usd": 3592.0,
+        "percent_below_provider_history": -33.5,
         "protection": "unknown",
-        "total_round_trip_usd": 3808.0
+        "total_round_trip_usd": 3592.0
+      },
+      {
+        "id": "7993473759f2f5533159cea5",
+        "own_comparable_days": 1,
+        "own_comparable_median_usd": 3592.0,
+        "percent_below_provider_history": -33.5,
+        "protection": "unknown",
+        "total_round_trip_usd": 3592.0
+      },
+      {
+        "id": "a0ee1af9bcc88ae364e93b5e",
+        "own_comparable_days": 1,
+        "own_comparable_median_usd": 3592.0,
+        "percent_below_provider_history": -33.5,
+        "protection": "unknown",
+        "total_round_trip_usd": 3592.0
       }
     ],
-    "generated_at": "2026-10-29T17:47:48.626213+00:00",
+    "generated_at": "2026-10-29T17:48:36.680687+00:00",
     "historical": {
       "days": 30,
       "first_date": "2026-09-30",
       "last_date": "2026-10-29",
-      "lowest_usd": 2051,
-      "median_usd": 2642.0,
+      "lowest_usd": 2083,
+      "median_usd": 2690.0,
       "scope": "provider search-level history; ticket quality, baggage and protection comparability unverified",
       "source": "Google Flights via SerpApi",
       "typical_price_range_usd": [
