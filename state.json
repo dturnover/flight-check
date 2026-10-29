@@ -3,45 +3,45 @@
   "baseline_report": {
     "candidates": [
       {
-        "id": "f5d7bebf76f3c55c047405ef",
+        "id": "06be5b19a533d33907f9a239",
         "own_comparable_days": 1,
-        "own_comparable_median_usd": 3615.0,
-        "percent_below_provider_history": -36.5,
+        "own_comparable_median_usd": 3138.0,
+        "percent_below_provider_history": -18.8,
         "protection": "unknown",
-        "total_round_trip_usd": 3615.0
+        "total_round_trip_usd": 3138.0
       },
       {
-        "id": "857b1b768d7273bb86c4dbd6",
+        "id": "2ebd288c90798f8a4b7a6601",
         "own_comparable_days": 1,
-        "own_comparable_median_usd": 3615.0,
-        "percent_below_provider_history": -36.5,
+        "own_comparable_median_usd": 3333.0,
+        "percent_below_provider_history": -26.2,
         "protection": "unknown",
-        "total_round_trip_usd": 3615.0
+        "total_round_trip_usd": 3333.0
       },
       {
-        "id": "67e7ca0afe8506f5ca4755b2",
+        "id": "7fe7558a9c2e668def1c2130",
         "own_comparable_days": 1,
-        "own_comparable_median_usd": 3615.0,
-        "percent_below_provider_history": -53.5,
+        "own_comparable_median_usd": 3138.0,
+        "percent_below_provider_history": -35.8,
         "protection": "unknown",
-        "total_round_trip_usd": 4066.0
+        "total_round_trip_usd": 3589.0
       },
       {
-        "id": "a83736ad3e70889d72bf4d61",
+        "id": "d2f17ea435cf6754a495936d",
         "own_comparable_days": 1,
-        "own_comparable_median_usd": 6475.0,
-        "percent_below_provider_history": -144.5,
+        "own_comparable_median_usd": 3333.0,
+        "percent_below_provider_history": -44.1,
         "protection": "unknown",
-        "total_round_trip_usd": 6475.0
+        "total_round_trip_usd": 3808.0
       }
     ],
-    "generated_at": "2026-10-29T17:46:39.292813+00:00",
+    "generated_at": "2026-10-29T17:47:48.626213+00:00",
     "historical": {
       "days": 30,
       "first_date": "2026-09-30",
       "last_date": "2026-10-29",
       "lowest_usd": 2051,
-      "median_usd": 2648.0,
+      "median_usd": 2642.0,
       "scope": "provider search-level history; ticket quality, baggage and protection comparability unverified",
       "source": "Google Flights via SerpApi",
       "typical_price_range_usd": [
