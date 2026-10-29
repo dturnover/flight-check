@@ -4628,8 +4628,13 @@
       "at": "2026-10-29T19:39:00.515158+00:00",
       "command": "scheduled",
       "status": "next scheduled observation not due"
+    },
+    {
+      "at": "2026-10-29T22:38:30.238326+00:00",
+      "command": "stop",
+      "status": "stopped"
     }
   ],
-  "stopped": false,
+  "stopped": true,
   "version": 1
 }
