@@ -233,20 +233,20 @@
         [],
         []
       ],
-      "booking_token": "WyJDalJJZERsUlpqUjRMV0kyTTFGQlFtdE5OMEZDUnkwdExTMHRMUzB0TFhaM2FtMHlNa0ZCUVVGQlIzSnBjR1kwU0ZGR1RFRkJFZ3RQV2pjME1ueFBXakl3TkJvTENOWFFGUkFDR2dOVlUwUTRISERWMEJVPSIsW1siTEFYIiwiMjAyNi0xMi0xOCIsIklDTiIsbnVsbCwiT1oiLCIyMDMiXSxbIklDTiIsIjIwMjYtMTItMjAiLCJCS0siLG51bGwsIk9aIiwiNzQxIl1dLFtbIkJLSyIsIjIwMjctMDEtMDMiLCJJQ04iLG51bGwsIk9aIiwiNzQyIl0sWyJJQ04iLCIyMDI3LTAxLTA0IiwiTEFYIixudWxsLCJPWiIsIjIwNCJdXV0=",
-      "cohort": "e0faead97a94be66eca80a4a",
-      "id": "92b1d64fb3e223efe18c0420",
-      "observed_at": "2026-10-29T01:49:08.212333+00:00",
+      "booking_token": "WyJDalJJV1VwSlVWaHhNMG95TW5kQlJERjFVR2RDUnkwdExTMHRkbmRpYlc0eE15MXVNa0ZCUVVGQlIzSnFVUzA0VDJocmFtTkJFZ3RQV2pjME1ueFBXakl3TkJvTENMYk1GUkFDR2dOVlUwUTRISEMyekJVPSIsW1siTEFYIiwiMjAyNi0xMi0xOCIsIklDTiIsbnVsbCwiT1oiLCIyMDMiXSxbIklDTiIsIjIwMjYtMTItMjAiLCJCS0siLG51bGwsIktFIiwiNjU3Il1dLFtbIkJLSyIsIjIwMjctMDEtMDMiLCJJQ04iLG51bGwsIk9aIiwiNzQyIl0sWyJJQ04iLCIyMDI3LTAxLTA0IiwiTEFYIixudWxsLCJPWiIsIjIwNCJdXV0=",
+      "cohort": "6c24d0e47ecdbec3f59cd2d4",
+      "id": "82bf030a7b21dbf56a00c747",
+      "observed_at": "2026-10-29T13:03:05.069610+00:00",
       "outbound": {
         "baggage_notes": [],
         "layovers": [
           {
             "airport": "ICN",
-            "minutes": 715.0,
+            "minutes": 185.0,
             "overnight": false
           }
         ],
-        "minutes": 1870,
+        "minutes": 1355,
         "segments": [
           {
             "airline": "Asiana Airlines",
@@ -264,23 +264,23 @@
             "flight_number": "OZ 203"
           },
           {
-            "airline": "Asiana Airlines",
+            "airline": "Korean Air",
             "arrival_airport": {
               "id": "BKK",
               "name": "Suvarnabhumi Airport",
-              "time": "2026-12-20 22:00"
+              "time": "2026-12-20 13:25"
             },
             "departure_airport": {
               "id": "ICN",
               "name": "Incheon International Airport",
-              "time": "2026-12-20 18:05"
+              "time": "2026-12-20 09:15"
             },
-            "duration": 355,
-            "flight_number": "OZ 741"
+            "duration": 370,
+            "flight_number": "KE 657"
           }
         ]
       },
-      "price": 3544.0,
+      "price": 3539.0,
       "protection": "unknown",
       "return": {
         "baggage_notes": [],
@@ -333,20 +333,20 @@
         [],
         []
       ],
-      "booking_token": "WyJDalJJZERsUlpqUjRMV0kyTTFGQlFtdE5OMEZDUnkwdExTMHRMUzB0TFhaM2FtMHlNa0ZCUVVGQlIzSnBjR1kwU0ZGR1RFRkJFZ3RMUlRZMU5IeFBXakl3TWhvTENOZnhGUkFDR2dOVlUwUTRISERYOFJVPSIsW1siTEFYIiwiMjAyNi0xMi0xOCIsIklDTiIsbnVsbCwiT1oiLCIyMDMiXSxbIklDTiIsIjIwMjYtMTItMjAiLCJCS0siLG51bGwsIk9aIiwiNzQxIl1dLFtbIkJLSyIsIjIwMjctMDEtMDMiLCJJQ04iLG51bGwsIktFIiwiNjU0Il0sWyJJQ04iLCIyMDI3LTAxLTAzIiwiTEFYIixudWxsLCJPWiIsIjIwMiJdXV0=",
-      "cohort": "0a20fc752e28b7d7004e2b44",
-      "id": "6d7d07bd4c924e988731d1f8",
-      "observed_at": "2026-10-29T01:49:08.212338+00:00",
+      "booking_token": "WyJDalJJVmw5eFZHVXpWbFpITkhOQlJHZzNZa0ZDUnkwdExTMHRMUzB0ZG5kaVpYY3hPRUZCUVVGQlIzSnFVVjlaU2xwU2IwOUJFZ3RQV2pjME1ueFBXakl3TkJvTENMYk1GUkFDR2dOVlUwUTRISEMyekJVPSIsW1siTEFYIiwiMjAyNi0xMi0xOCIsIklDTiIsbnVsbCwiT1oiLCIyMDMiXSxbIklDTiIsIjIwMjYtMTItMjAiLCJCS0siLG51bGwsIktFIiwiNjUxIl1dLFtbIkJLSyIsIjIwMjctMDEtMDMiLCJJQ04iLG51bGwsIk9aIiwiNzQyIl0sWyJJQ04iLCIyMDI3LTAxLTA0IiwiTEFYIixudWxsLCJPWiIsIjIwNCJdXV0=",
+      "cohort": "e0faead97a94be66eca80a4a",
+      "id": "92ddb6c552024523461f4da9",
+      "observed_at": "2026-10-29T13:03:05.069615+00:00",
       "outbound": {
         "baggage_notes": [],
         "layovers": [
           {
             "airport": "ICN",
-            "minutes": 715.0,
+            "minutes": 670.0,
             "overnight": false
           }
         ],
-        "minutes": 1870,
+        "minutes": 1840,
         "segments": [
           {
             "airline": "Asiana Airlines",
@@ -364,23 +364,123 @@
             "flight_number": "OZ 203"
           },
           {
-            "airline": "Asiana Airlines",
+            "airline": "Korean Air",
             "arrival_airport": {
               "id": "BKK",
               "name": "Suvarnabhumi Airport",
-              "time": "2026-12-20 22:00"
+              "time": "2026-12-20 21:30"
             },
             "departure_airport": {
               "id": "ICN",
               "name": "Incheon International Airport",
-              "time": "2026-12-20 18:05"
+              "time": "2026-12-20 17:20"
             },
-            "duration": 355,
-            "flight_number": "OZ 741"
+            "duration": 370,
+            "flight_number": "KE 651"
           }
         ]
       },
-      "price": 3587.0,
+      "price": 3539.0,
+      "protection": "unknown",
+      "return": {
+        "baggage_notes": [],
+        "layovers": [
+          {
+            "airport": "ICN",
+            "minutes": 875.0,
+            "overnight": false
+          }
+        ],
+        "minutes": 1845,
+        "segments": [
+          {
+            "airline": "Asiana Airlines",
+            "arrival_airport": {
+              "id": "ICN",
+              "name": "Incheon International Airport",
+              "time": "2027-01-04 06:55"
+            },
+            "departure_airport": {
+              "id": "BKK",
+              "name": "Suvarnabhumi Airport",
+              "time": "2027-01-03 23:55"
+            },
+            "duration": 300,
+            "flight_number": "OZ 742"
+          },
+          {
+            "airline": "Asiana Airlines",
+            "arrival_airport": {
+              "id": "LAX",
+              "name": "Los Angeles International Airport",
+              "time": "2027-01-04 15:40"
+            },
+            "departure_airport": {
+              "id": "ICN",
+              "name": "Incheon International Airport",
+              "time": "2027-01-04 21:30"
+            },
+            "duration": 670,
+            "flight_number": "OZ 204"
+          }
+        ]
+      },
+      "search_link": "https://www.google.com/travel/flights?q=Round+trip+LAX+to+BKK+2026-12-18+after+18%3A00+return+2027-01-03+1+adult+economy&curr=USD&hl=en",
+      "seller": "Not verified; compare airline-direct offers and check ticket terms before paying."
+    },
+    {
+      "baggage": [
+        [],
+        []
+      ],
+      "booking_token": "WyJDalJJV1VwSlVWaHhNMG95TW5kQlJERjFVR2RDUnkwdExTMHRkbmRpYlc0eE15MXVNa0ZCUVVGQlIzSnFVUzA0VDJocmFtTkJFZ3RMUlRZMU5IeFBXakl3TWhvTENPYUhGaEFDR2dOVlUwUTRISERtaHhZPSIsW1siTEFYIiwiMjAyNi0xMi0xOCIsIklDTiIsbnVsbCwiT1oiLCIyMDMiXSxbIklDTiIsIjIwMjYtMTItMjAiLCJCS0siLG51bGwsIktFIiwiNjU3Il1dLFtbIkJLSyIsIjIwMjctMDEtMDMiLCJJQ04iLG51bGwsIktFIiwiNjU0Il0sWyJJQ04iLCIyMDI3LTAxLTAzIiwiTEFYIixudWxsLCJPWiIsIjIwMiJdXV0=",
+      "cohort": "8f51f6479e5e8dc4b3996985",
+      "id": "f5d7bebf76f3c55c047405ef",
+      "observed_at": "2026-10-29T13:03:05.069620+00:00",
+      "outbound": {
+        "baggage_notes": [],
+        "layovers": [
+          {
+            "airport": "ICN",
+            "minutes": 185.0,
+            "overnight": false
+          }
+        ],
+        "minutes": 1355,
+        "segments": [
+          {
+            "airline": "Asiana Airlines",
+            "arrival_airport": {
+              "id": "ICN",
+              "name": "Incheon International Airport",
+              "time": "2026-12-20 06:10"
+            },
+            "departure_airport": {
+              "id": "LAX",
+              "name": "Los Angeles International Airport",
+              "time": "2026-12-18 23:50"
+            },
+            "duration": 800,
+            "flight_number": "OZ 203"
+          },
+          {
+            "airline": "Korean Air",
+            "arrival_airport": {
+              "id": "BKK",
+              "name": "Suvarnabhumi Airport",
+              "time": "2026-12-20 13:25"
+            },
+            "departure_airport": {
+              "id": "ICN",
+              "name": "Incheon International Airport",
+              "time": "2026-12-20 09:15"
+            },
+            "duration": 370,
+            "flight_number": "KE 657"
+          }
+        ]
+      },
+      "price": 3615.0,
       "protection": "unknown",
       "return": {
         "baggage_notes": [],
@@ -433,20 +533,20 @@
         [],
         []
       ],
-      "booking_token": "WyJDalJJZERsUlpqUjRMV0kyTTFGQlFtdE5OMEZDUnkwdExTMHRMUzB0TFhaM2FtMHlNa0ZCUVVGQlIzSnBjR1kwU0ZGR1RFRkJFZ3RMUlRZMU9IeFBXakl3TWhvTENJNnRHQkFDR2dOVlUwUTRISENPclJnPSIsW1siTEFYIiwiMjAyNi0xMi0xOCIsIklDTiIsbnVsbCwiT1oiLCIyMDMiXSxbIklDTiIsIjIwMjYtMTItMjAiLCJCS0siLG51bGwsIk9aIiwiNzQxIl1dLFtbIkJLSyIsIjIwMjctMDEtMDMiLCJJQ04iLG51bGwsIktFIiwiNjU4Il0sWyJJQ04iLCIyMDI3LTAxLTA0IiwiTEFYIixudWxsLCJPWiIsIjIwMiJdXV0=",
-      "cohort": "1a0ea2b58a9bb8984ae84002",
-      "id": "502ed6f630c415d8d5be6a2d",
-      "observed_at": "2026-10-29T01:49:08.212341+00:00",
+      "booking_token": "WyJDalJJVmw5eFZHVXpWbFpITkhOQlJHZzNZa0ZDUnkwdExTMHRMUzB0ZG5kaVpYY3hPRUZCUVVGQlIzSnFVVjlaU2xwU2IwOUJFZ3RMUlRZMU5IeFBXakl3TWhvTENPYUhGaEFDR2dOVlUwUTRISERtaHhZPSIsW1siTEFYIiwiMjAyNi0xMi0xOCIsIklDTiIsbnVsbCwiT1oiLCIyMDMiXSxbIklDTiIsIjIwMjYtMTItMjAiLCJCS0siLG51bGwsIktFIiwiNjUxIl1dLFtbIkJLSyIsIjIwMjctMDEtMDMiLCJJQ04iLG51bGwsIktFIiwiNjU0Il0sWyJJQ04iLCIyMDI3LTAxLTAzIiwiTEFYIixudWxsLCJPWiIsIjIwMiJdXV0=",
+      "cohort": "0a20fc752e28b7d7004e2b44",
+      "id": "857b1b768d7273bb86c4dbd6",
+      "observed_at": "2026-10-29T13:03:05.069623+00:00",
       "outbound": {
         "baggage_notes": [],
         "layovers": [
           {
             "airport": "ICN",
-            "minutes": 715.0,
+            "minutes": 670.0,
             "overnight": false
           }
         ],
-        "minutes": 1870,
+        "minutes": 1840,
         "segments": [
           {
             "airline": "Asiana Airlines",
@@ -464,61 +564,61 @@
             "flight_number": "OZ 203"
           },
           {
-            "airline": "Asiana Airlines",
+            "airline": "Korean Air",
             "arrival_airport": {
               "id": "BKK",
               "name": "Suvarnabhumi Airport",
-              "time": "2026-12-20 22:00"
+              "time": "2026-12-20 21:30"
             },
             "departure_airport": {
               "id": "ICN",
               "name": "Incheon International Airport",
-              "time": "2026-12-20 18:05"
+              "time": "2026-12-20 17:20"
             },
-            "duration": 355,
-            "flight_number": "OZ 741"
+            "duration": 370,
+            "flight_number": "KE 651"
           }
         ]
       },
-      "price": 3990.0,
+      "price": 3615.0,
       "protection": "unknown",
       "return": {
         "baggage_notes": [],
         "layovers": [
           {
             "airport": "ICN",
-            "minutes": 465.0,
+            "minutes": 255.0,
             "overnight": false
           }
         ],
-        "minutes": 1440,
+        "minutes": 1235,
         "segments": [
           {
             "airline": "Korean Air",
             "arrival_airport": {
               "id": "ICN",
               "name": "Incheon International Airport",
-              "time": "2027-01-04 04:45"
+              "time": "2027-01-03 08:15"
             },
             "departure_airport": {
               "id": "BKK",
               "name": "Suvarnabhumi Airport",
-              "time": "2027-01-03 21:40"
+              "time": "2027-01-03 01:05"
             },
-            "duration": 305,
-            "flight_number": "KE 658"
+            "duration": 310,
+            "flight_number": "KE 654"
           },
           {
             "airline": "Asiana Airlines",
             "arrival_airport": {
               "id": "LAX",
               "name": "Los Angeles International Airport",
-              "time": "2027-01-04 06:40"
+              "time": "2027-01-03 06:40"
             },
             "departure_airport": {
               "id": "ICN",
               "name": "Incheon International Airport",
-              "time": "2027-01-04 12:30"
+              "time": "2027-01-03 12:30"
             },
             "duration": 670,
             "flight_number": "OZ 202"
@@ -533,20 +633,20 @@
         [],
         []
       ],
-      "booking_token": "WyJDalJJZERsUlpqUjRMV0kyTTFGQlFtdE5OMEZDUnkwdExTMHRMUzB0TFhaM2FtMHlNa0ZCUVVGQlIzSnBjR1kwU0ZGR1RFRkJFZ3RMUlRZMU1ueFBXakl3TWhvTENJNnRHQkFDR2dOVlUwUTRISENPclJnPSIsW1siTEFYIiwiMjAyNi0xMi0xOCIsIklDTiIsbnVsbCwiT1oiLCIyMDMiXSxbIklDTiIsIjIwMjYtMTItMjAiLCJCS0siLG51bGwsIk9aIiwiNzQxIl1dLFtbIkJLSyIsIjIwMjctMDEtMDMiLCJJQ04iLG51bGwsIktFIiwiNjUyIl0sWyJJQ04iLCIyMDI3LTAxLTA0IiwiTEFYIixudWxsLCJPWiIsIjIwMiJdXV0=",
-      "cohort": "0a20fc752e28b7d7004e2b44",
-      "id": "e38c32b3a7e32534b64e8cb7",
-      "observed_at": "2026-10-29T01:49:08.212343+00:00",
+      "booking_token": "WyJDalJJV1VwSlVWaHhNMG95TW5kQlJERjFVR2RDUnkwdExTMHRkbmRpYlc0eE15MXVNa0ZCUVVGQlIzSnFVUzA0VDJocmFtTkJFZ3RQV2pjME1ueFBXakl3TWhvTENQdXNHQkFDR2dOVlUwUTRISEQ3ckJnPSIsW1siTEFYIiwiMjAyNi0xMi0xOCIsIklDTiIsbnVsbCwiT1oiLCIyMDMiXSxbIklDTiIsIjIwMjYtMTItMjAiLCJCS0siLG51bGwsIktFIiwiNjU3Il1dLFtbIkJLSyIsIjIwMjctMDEtMDMiLCJJQ04iLG51bGwsIk9aIiwiNzQyIl0sWyJJQ04iLCIyMDI3LTAxLTA0IiwiTEFYIixudWxsLCJPWiIsIjIwMiJdXV0=",
+      "cohort": "8f51f6479e5e8dc4b3996985",
+      "id": "4f4b8cad9d740bc3083109f7",
+      "observed_at": "2026-10-29T13:03:05.069626+00:00",
       "outbound": {
         "baggage_notes": [],
         "layovers": [
           {
             "airport": "ICN",
-            "minutes": 715.0,
+            "minutes": 185.0,
             "overnight": false
           }
         ],
-        "minutes": 1870,
+        "minutes": 1355,
         "segments": [
           {
             "airline": "Asiana Airlines",
@@ -564,223 +664,23 @@
             "flight_number": "OZ 203"
           },
           {
-            "airline": "Asiana Airlines",
+            "airline": "Korean Air",
             "arrival_airport": {
               "id": "BKK",
               "name": "Suvarnabhumi Airport",
-              "time": "2026-12-20 22:00"
+              "time": "2026-12-20 13:25"
             },
             "departure_airport": {
               "id": "ICN",
               "name": "Incheon International Airport",
-              "time": "2026-12-20 18:05"
+              "time": "2026-12-20 09:15"
             },
-            "duration": 355,
-            "flight_number": "OZ 741"
+            "duration": 370,
+            "flight_number": "KE 657"
           }
         ]
       },
       "price": 3990.0,
-      "protection": "unknown",
-      "return": {
-        "baggage_notes": [],
-        "layovers": [
-          {
-            "airport": "ICN",
-            "minutes": 355.0,
-            "overnight": false
-          }
-        ],
-        "minutes": 1345,
-        "segments": [
-          {
-            "airline": "Korean Air",
-            "arrival_airport": {
-              "id": "ICN",
-              "name": "Incheon International Airport",
-              "time": "2027-01-04 06:35"
-            },
-            "departure_airport": {
-              "id": "BKK",
-              "name": "Suvarnabhumi Airport",
-              "time": "2027-01-03 23:15"
-            },
-            "duration": 320,
-            "flight_number": "KE 652"
-          },
-          {
-            "airline": "Asiana Airlines",
-            "arrival_airport": {
-              "id": "LAX",
-              "name": "Los Angeles International Airport",
-              "time": "2027-01-04 06:40"
-            },
-            "departure_airport": {
-              "id": "ICN",
-              "name": "Incheon International Airport",
-              "time": "2027-01-04 12:30"
-            },
-            "duration": 670,
-            "flight_number": "OZ 202"
-          }
-        ]
-      },
-      "search_link": "https://www.google.com/travel/flights?q=Round+trip+LAX+to+BKK+2026-12-18+after+18%3A00+return+2027-01-03+1+adult+economy&curr=USD&hl=en",
-      "seller": "Not verified; compare airline-direct offers and check ticket terms before paying."
-    },
-    {
-      "baggage": [
-        [],
-        []
-      ],
-      "booking_token": "WyJDalJJZERsUlpqUjRMV0kyTTFGQlFtdE5OMEZDUnkwdExTMHRMUzB0TFhaM2FtMHlNa0ZCUVVGQlIzSnBjR1kwU0ZGR1RFRkJFZ3RQV2pjME5IeFBXakl3TWhvTENPV3hHQkFDR2dOVlUwUTRISERsc1JnPSIsW1siTEFYIiwiMjAyNi0xMi0xOCIsIklDTiIsbnVsbCwiT1oiLCIyMDMiXSxbIklDTiIsIjIwMjYtMTItMjAiLCJCS0siLG51bGwsIk9aIiwiNzQxIl1dLFtbIkJLSyIsIjIwMjctMDEtMDMiLCJJQ04iLG51bGwsIk9aIiwiNzQ0Il0sWyJJQ04iLCIyMDI3LTAxLTA0IiwiTEFYIixudWxsLCJPWiIsIjIwMiJdXV0=",
-      "cohort": "7d11bf879524abc47a60c641",
-      "id": "47d8a9b21f44adaa062d4b01",
-      "observed_at": "2026-10-29T01:49:08.212345+00:00",
-      "outbound": {
-        "baggage_notes": [],
-        "layovers": [
-          {
-            "airport": "ICN",
-            "minutes": 715.0,
-            "overnight": false
-          }
-        ],
-        "minutes": 1870,
-        "segments": [
-          {
-            "airline": "Asiana Airlines",
-            "arrival_airport": {
-              "id": "ICN",
-              "name": "Incheon International Airport",
-              "time": "2026-12-20 06:10"
-            },
-            "departure_airport": {
-              "id": "LAX",
-              "name": "Los Angeles International Airport",
-              "time": "2026-12-18 23:50"
-            },
-            "duration": 800,
-            "flight_number": "OZ 203"
-          },
-          {
-            "airline": "Asiana Airlines",
-            "arrival_airport": {
-              "id": "BKK",
-              "name": "Suvarnabhumi Airport",
-              "time": "2026-12-20 22:00"
-            },
-            "departure_airport": {
-              "id": "ICN",
-              "name": "Incheon International Airport",
-              "time": "2026-12-20 18:05"
-            },
-            "duration": 355,
-            "flight_number": "OZ 741"
-          }
-        ]
-      },
-      "price": 3996.0,
-      "protection": "unknown",
-      "return": {
-        "baggage_notes": [],
-        "layovers": [
-          {
-            "airport": "ICN",
-            "minutes": 1000.0,
-            "overnight": true
-          }
-        ],
-        "minutes": 1995,
-        "segments": [
-          {
-            "airline": "Asiana Airlines",
-            "arrival_airport": {
-              "id": "ICN",
-              "name": "Incheon International Airport",
-              "time": "2027-01-03 19:50"
-            },
-            "departure_airport": {
-              "id": "BKK",
-              "name": "Suvarnabhumi Airport",
-              "time": "2027-01-03 12:25"
-            },
-            "duration": 325,
-            "flight_number": "OZ 744"
-          },
-          {
-            "airline": "Asiana Airlines",
-            "arrival_airport": {
-              "id": "LAX",
-              "name": "Los Angeles International Airport",
-              "time": "2027-01-04 06:40"
-            },
-            "departure_airport": {
-              "id": "ICN",
-              "name": "Incheon International Airport",
-              "time": "2027-01-04 12:30"
-            },
-            "duration": 670,
-            "flight_number": "OZ 202"
-          }
-        ]
-      },
-      "search_link": "https://www.google.com/travel/flights?q=Round+trip+LAX+to+BKK+2026-12-18+after+18%3A00+return+2027-01-03+1+adult+economy&curr=USD&hl=en",
-      "seller": "Not verified; compare airline-direct offers and check ticket terms before paying."
-    },
-    {
-      "baggage": [
-        [],
-        []
-      ],
-      "booking_token": "WyJDalJJZERsUlpqUjRMV0kyTTFGQlFtdE5OMEZDUnkwdExTMHRMUzB0TFhaM2FtMHlNa0ZCUVVGQlIzSnBjR1kwU0ZGR1RFRkJFZ3RQV2pjME1ueFBXakl3TWhvTENPV3hHQkFDR2dOVlUwUTRISERsc1JnPSIsW1siTEFYIiwiMjAyNi0xMi0xOCIsIklDTiIsbnVsbCwiT1oiLCIyMDMiXSxbIklDTiIsIjIwMjYtMTItMjAiLCJCS0siLG51bGwsIk9aIiwiNzQxIl1dLFtbIkJLSyIsIjIwMjctMDEtMDMiLCJJQ04iLG51bGwsIk9aIiwiNzQyIl0sWyJJQ04iLCIyMDI3LTAxLTA0IiwiTEFYIixudWxsLCJPWiIsIjIwMiJdXV0=",
-      "cohort": "0a20fc752e28b7d7004e2b44",
-      "id": "a7130e68b93ce74ddbbc4f41",
-      "observed_at": "2026-10-29T01:49:08.212347+00:00",
-      "outbound": {
-        "baggage_notes": [],
-        "layovers": [
-          {
-            "airport": "ICN",
-            "minutes": 715.0,
-            "overnight": false
-          }
-        ],
-        "minutes": 1870,
-        "segments": [
-          {
-            "airline": "Asiana Airlines",
-            "arrival_airport": {
-              "id": "ICN",
-              "name": "Incheon International Airport",
-              "time": "2026-12-20 06:10"
-            },
-            "departure_airport": {
-              "id": "LAX",
-              "name": "Los Angeles International Airport",
-              "time": "2026-12-18 23:50"
-            },
-            "duration": 800,
-            "flight_number": "OZ 203"
-          },
-          {
-            "airline": "Asiana Airlines",
-            "arrival_airport": {
-              "id": "BKK",
-              "name": "Suvarnabhumi Airport",
-              "time": "2026-12-20 22:00"
-            },
-            "departure_airport": {
-              "id": "ICN",
-              "name": "Incheon International Airport",
-              "time": "2026-12-20 18:05"
-            },
-            "duration": 355,
-            "flight_number": "OZ 741"
-          }
-        ]
-      },
-      "price": 3996.0,
       "protection": "unknown",
       "return": {
         "baggage_notes": [],
@@ -833,20 +733,20 @@
         [],
         []
       ],
-      "booking_token": "WyJDalJJZERsUlpqUjRMV0kyTTFGQlFtdE5OMEZDUnkwdExTMHRMUzB0TFhaM2FtMHlNa0ZCUVVGQlIzSnBjR1kwU0ZGR1RFRkJFZ3RMUlRZMk1IeFBXakl3TkJvTENKelNHQkFDR2dOVlUwUTRISENjMGhnPSIsW1siTEFYIiwiMjAyNi0xMi0xOCIsIklDTiIsbnVsbCwiT1oiLCIyMDMiXSxbIklDTiIsIjIwMjYtMTItMjAiLCJCS0siLG51bGwsIk9aIiwiNzQxIl1dLFtbIkJLSyIsIjIwMjctMDEtMDMiLCJJQ04iLG51bGwsIktFIiwiNjYwIl0sWyJJQ04iLCIyMDI3LTAxLTAzIiwiTEFYIixudWxsLCJPWiIsIjIwNCJdXV0=",
+      "booking_token": "WyJDalJJVmw5eFZHVXpWbFpITkhOQlJHZzNZa0ZDUnkwdExTMHRMUzB0ZG5kaVpYY3hPRUZCUVVGQlIzSnFVVjlaU2xwU2IwOUJFZzFQV2pjME1ueFBXakl3TWlNeEdnc0krNndZRUFJYUExVlRSRGdjY1B1c0dBPT0iLFtbIkxBWCIsIjIwMjYtMTItMTgiLCJJQ04iLG51bGwsIk9aIiwiMjAzIl0sWyJJQ04iLCIyMDI2LTEyLTIwIiwiQktLIixudWxsLCJLRSIsIjY1MSJdXSxbWyJCS0siLCIyMDI3LTAxLTAzIiwiSUNOIixudWxsLCJPWiIsIjc0MiJdLFsiSUNOIiwiMjAyNy0wMS0wNCIsIkxBWCIsbnVsbCwiT1oiLCIyMDIiXV1d",
       "cohort": "0a20fc752e28b7d7004e2b44",
-      "id": "e8577e7dce090cdae849899b",
-      "observed_at": "2026-10-29T01:49:08.212350+00:00",
+      "id": "48694406fa4a188c224a5a81",
+      "observed_at": "2026-10-29T13:03:05.069630+00:00",
       "outbound": {
         "baggage_notes": [],
         "layovers": [
           {
             "airport": "ICN",
-            "minutes": 715.0,
+            "minutes": 670.0,
             "overnight": false
           }
         ],
-        "minutes": 1870,
+        "minutes": 1840,
         "segments": [
           {
             "airline": "Asiana Airlines",
@@ -864,23 +764,223 @@
             "flight_number": "OZ 203"
           },
           {
-            "airline": "Asiana Airlines",
+            "airline": "Korean Air",
             "arrival_airport": {
               "id": "BKK",
               "name": "Suvarnabhumi Airport",
-              "time": "2026-12-20 22:00"
+              "time": "2026-12-20 21:30"
             },
             "departure_airport": {
               "id": "ICN",
               "name": "Incheon International Airport",
-              "time": "2026-12-20 18:05"
+              "time": "2026-12-20 17:20"
             },
-            "duration": 355,
-            "flight_number": "OZ 741"
+            "duration": 370,
+            "flight_number": "KE 651"
           }
         ]
       },
-      "price": 4038.0,
+      "price": 3990.0,
+      "protection": "unknown",
+      "return": {
+        "baggage_notes": [],
+        "layovers": [
+          {
+            "airport": "ICN",
+            "minutes": 335.0,
+            "overnight": false
+          }
+        ],
+        "minutes": 1305,
+        "segments": [
+          {
+            "airline": "Asiana Airlines",
+            "arrival_airport": {
+              "id": "ICN",
+              "name": "Incheon International Airport",
+              "time": "2027-01-04 06:55"
+            },
+            "departure_airport": {
+              "id": "BKK",
+              "name": "Suvarnabhumi Airport",
+              "time": "2027-01-03 23:55"
+            },
+            "duration": 300,
+            "flight_number": "OZ 742"
+          },
+          {
+            "airline": "Asiana Airlines",
+            "arrival_airport": {
+              "id": "LAX",
+              "name": "Los Angeles International Airport",
+              "time": "2027-01-04 06:40"
+            },
+            "departure_airport": {
+              "id": "ICN",
+              "name": "Incheon International Airport",
+              "time": "2027-01-04 12:30"
+            },
+            "duration": 670,
+            "flight_number": "OZ 202"
+          }
+        ]
+      },
+      "search_link": "https://www.google.com/travel/flights?q=Round+trip+LAX+to+BKK+2026-12-18+after+18%3A00+return+2027-01-03+1+adult+economy&curr=USD&hl=en",
+      "seller": "Not verified; compare airline-direct offers and check ticket terms before paying."
+    },
+    {
+      "baggage": [
+        [],
+        []
+      ],
+      "booking_token": "WyJDalJJV1VwSlVWaHhNMG95TW5kQlJERjFVR2RDUnkwdExTMHRkbmRpYlc0eE15MXVNa0ZCUVVGQlIzSnFVUzA0VDJocmFtTkJFZ3RMUlRZMU1ueFBXakl3TWhvTENKM0RHQkFDR2dOVlUwUTRISENkd3hnPSIsW1siTEFYIiwiMjAyNi0xMi0xOCIsIklDTiIsbnVsbCwiT1oiLCIyMDMiXSxbIklDTiIsIjIwMjYtMTItMjAiLCJCS0siLG51bGwsIktFIiwiNjU3Il1dLFtbIkJLSyIsIjIwMjctMDEtMDMiLCJJQ04iLG51bGwsIktFIiwiNjUyIl0sWyJJQ04iLCIyMDI3LTAxLTA0IiwiTEFYIixudWxsLCJPWiIsIjIwMiJdXV0=",
+      "cohort": "8f51f6479e5e8dc4b3996985",
+      "id": "c30e80f2376f6b2c7956ae46",
+      "observed_at": "2026-10-29T13:03:05.069633+00:00",
+      "outbound": {
+        "baggage_notes": [],
+        "layovers": [
+          {
+            "airport": "ICN",
+            "minutes": 185.0,
+            "overnight": false
+          }
+        ],
+        "minutes": 1355,
+        "segments": [
+          {
+            "airline": "Asiana Airlines",
+            "arrival_airport": {
+              "id": "ICN",
+              "name": "Incheon International Airport",
+              "time": "2026-12-20 06:10"
+            },
+            "departure_airport": {
+              "id": "LAX",
+              "name": "Los Angeles International Airport",
+              "time": "2026-12-18 23:50"
+            },
+            "duration": 800,
+            "flight_number": "OZ 203"
+          },
+          {
+            "airline": "Korean Air",
+            "arrival_airport": {
+              "id": "BKK",
+              "name": "Suvarnabhumi Airport",
+              "time": "2026-12-20 13:25"
+            },
+            "departure_airport": {
+              "id": "ICN",
+              "name": "Incheon International Airport",
+              "time": "2026-12-20 09:15"
+            },
+            "duration": 370,
+            "flight_number": "KE 657"
+          }
+        ]
+      },
+      "price": 4019.0,
+      "protection": "unknown",
+      "return": {
+        "baggage_notes": [],
+        "layovers": [
+          {
+            "airport": "ICN",
+            "minutes": 355.0,
+            "overnight": false
+          }
+        ],
+        "minutes": 1345,
+        "segments": [
+          {
+            "airline": "Korean Air",
+            "arrival_airport": {
+              "id": "ICN",
+              "name": "Incheon International Airport",
+              "time": "2027-01-04 06:35"
+            },
+            "departure_airport": {
+              "id": "BKK",
+              "name": "Suvarnabhumi Airport",
+              "time": "2027-01-03 23:15"
+            },
+            "duration": 320,
+            "flight_number": "KE 652"
+          },
+          {
+            "airline": "Asiana Airlines",
+            "arrival_airport": {
+              "id": "LAX",
+              "name": "Los Angeles International Airport",
+              "time": "2027-01-04 06:40"
+            },
+            "departure_airport": {
+              "id": "ICN",
+              "name": "Incheon International Airport",
+              "time": "2027-01-04 12:30"
+            },
+            "duration": 670,
+            "flight_number": "OZ 202"
+          }
+        ]
+      },
+      "search_link": "https://www.google.com/travel/flights?q=Round+trip+LAX+to+BKK+2026-12-18+after+18%3A00+return+2027-01-03+1+adult+economy&curr=USD&hl=en",
+      "seller": "Not verified; compare airline-direct offers and check ticket terms before paying."
+    },
+    {
+      "baggage": [
+        [],
+        []
+      ],
+      "booking_token": "WyJDalJJV1VwSlVWaHhNMG95TW5kQlJERjFVR2RDUnkwdExTMHRkbmRpYlc0eE15MXVNa0ZCUVVGQlIzSnFVUzA0VDJocmFtTkJFZ3RMUlRZMk1IeFBXakl3TkJvTENLdm9HQkFDR2dOVlUwUTRISENyNkJnPSIsW1siTEFYIiwiMjAyNi0xMi0xOCIsIklDTiIsbnVsbCwiT1oiLCIyMDMiXSxbIklDTiIsIjIwMjYtMTItMjAiLCJCS0siLG51bGwsIktFIiwiNjU3Il1dLFtbIkJLSyIsIjIwMjctMDEtMDMiLCJJQ04iLG51bGwsIktFIiwiNjYwIl0sWyJJQ04iLCIyMDI3LTAxLTAzIiwiTEFYIixudWxsLCJPWiIsIjIwNCJdXV0=",
+      "cohort": "8f51f6479e5e8dc4b3996985",
+      "id": "67e7ca0afe8506f5ca4755b2",
+      "observed_at": "2026-10-29T13:03:05.069636+00:00",
+      "outbound": {
+        "baggage_notes": [],
+        "layovers": [
+          {
+            "airport": "ICN",
+            "minutes": 185.0,
+            "overnight": false
+          }
+        ],
+        "minutes": 1355,
+        "segments": [
+          {
+            "airline": "Asiana Airlines",
+            "arrival_airport": {
+              "id": "ICN",
+              "name": "Incheon International Airport",
+              "time": "2026-12-20 06:10"
+            },
+            "departure_airport": {
+              "id": "LAX",
+              "name": "Los Angeles International Airport",
+              "time": "2026-12-18 23:50"
+            },
+            "duration": 800,
+            "flight_number": "OZ 203"
+          },
+          {
+            "airline": "Korean Air",
+            "arrival_airport": {
+              "id": "BKK",
+              "name": "Suvarnabhumi Airport",
+              "time": "2026-12-20 13:25"
+            },
+            "departure_airport": {
+              "id": "ICN",
+              "name": "Incheon International Airport",
+              "time": "2026-12-20 09:15"
+            },
+            "duration": 370,
+            "flight_number": "KE 657"
+          }
+        ]
+      },
+      "price": 4066.0,
       "protection": "unknown",
       "return": {
         "baggage_notes": [],
@@ -933,95 +1033,95 @@
         [],
         []
       ],
-      "booking_token": "WyJDalJJU1ZBM1UyWnRaSEZXZGtGQlFWOWpNR2RDUnkwdExTMHRMUzB0ZVdsaVkyc3hPRUZCUVVGQlIzSnBjR2RWVEdScmNUSkJFZ3hEV2pnd09EQjhRMW96TWpjYUN3ajU0eGdRQWhvRFZWTkVPQnh3K2VNWSIsW1siTEFYIiwiMjAyNi0xMi0xOCIsIkNBTiIsbnVsbCwiQ1oiLCIzMjgiXSxbIkNBTiIsIjIwMjYtMTItMjAiLCJCS0siLG51bGwsIkNaIiwiODA5OSJdXSxbWyJCS0siLCIyMDI3LTAxLTAzIiwiQ0FOIixudWxsLCJDWiIsIjgwODAiXSxbIkNBTiIsIjIwMjctMDEtMDMiLCJMQVgiLG51bGwsIkNaIiwiMzI3Il1dXQ==",
-      "cohort": "8f51f6479e5e8dc4b3996985",
-      "id": "7f3a54b3b232905c69b0f475",
-      "observed_at": "2026-10-29T01:49:08.212352+00:00",
+      "booking_token": "WyJDalJJWkc5aFltUjFWVWxFTVZGQlExWXlPWGRDUnkwdExTMHRMUzB0Y0dwaWEzQXhORUZCUVVGQlIzSnFVVjh3UTBVNFJHOUJFZ3RRVWpjek0zeFFVakV3TWhvTENKV1pHeEFDR2dOVlUwUTRISENWbVJzPSIsW1siTEFYIiwiMjAyNi0xMi0xOCIsIk1OTCIsbnVsbCwiUFIiLCIxMDMiXSxbIk1OTCIsIjIwMjYtMTItMjAiLCJCS0siLG51bGwsIlBSIiwiNzM2Il1dLFtbIkJLSyIsIjIwMjctMDEtMDMiLCJNTkwiLG51bGwsIlBSIiwiNzMzIl0sWyJNTkwiLCIyMDI3LTAxLTA0IiwiTEFYIixudWxsLCJQUiIsIjEwMiJdXV0=",
+      "cohort": "0dc38de55b1e51d490c0baad",
+      "id": "05a5a39a5b163f58a5bfdad9",
+      "observed_at": "2026-10-29T13:03:05.069639+00:00",
       "outbound": {
         "baggage_notes": [],
         "layovers": [
           {
-            "airport": "CAN",
-            "minutes": 305.0,
+            "airport": "MNL",
+            "minutes": 635.0,
             "overnight": false
           }
         ],
-        "minutes": 1435,
+        "minutes": 1780,
         "segments": [
           {
-            "airline": "China Southern",
+            "airline": "Philippine Airlines",
             "arrival_airport": {
-              "id": "CAN",
-              "name": "Guangzhou Baiyun International Airport",
-              "time": "2026-12-20 05:45"
+              "id": "MNL",
+              "name": "Ninoy Aquino International Airport",
+              "time": "2026-12-20 05:35"
             },
             "departure_airport": {
               "id": "LAX",
               "name": "Los Angeles International Airport",
-              "time": "2026-12-18 22:00"
+              "time": "2026-12-18 22:05"
             },
-            "duration": 945,
-            "flight_number": "CZ 328"
+            "duration": 930,
+            "flight_number": "PR 103"
           },
           {
-            "airline": "China Southern",
+            "airline": "Philippine Airlines",
             "arrival_airport": {
               "id": "BKK",
               "name": "Suvarnabhumi Airport",
-              "time": "2026-12-20 12:55"
+              "time": "2026-12-20 18:45"
             },
             "departure_airport": {
-              "id": "CAN",
-              "name": "Guangzhou Baiyun International Airport",
-              "time": "2026-12-20 10:50"
+              "id": "MNL",
+              "name": "Ninoy Aquino International Airport",
+              "time": "2026-12-20 16:10"
             },
-            "duration": 185,
-            "flight_number": "CZ 8099"
+            "duration": 215,
+            "flight_number": "PR 736"
           }
         ]
       },
-      "price": 4061.0,
+      "price": 4456.0,
       "protection": "unknown",
       "return": {
         "baggage_notes": [],
         "layovers": [
           {
-            "airport": "CAN",
-            "minutes": 315.0,
+            "airport": "MNL",
+            "minutes": 1095.0,
             "overnight": false
           }
         ],
-        "minutes": 1265,
+        "minutes": 2070,
         "segments": [
           {
-            "airline": "China Southern",
+            "airline": "Philippine Airlines",
             "arrival_airport": {
-              "id": "CAN",
-              "name": "Guangzhou Baiyun International Airport",
-              "time": "2027-01-03 16:20"
+              "id": "MNL",
+              "name": "Ninoy Aquino International Airport",
+              "time": "2027-01-04 04:00"
             },
             "departure_airport": {
               "id": "BKK",
               "name": "Suvarnabhumi Airport",
-              "time": "2027-01-03 12:25"
+              "time": "2027-01-03 23:40"
             },
-            "duration": 175,
-            "flight_number": "CZ 8080"
+            "duration": 200,
+            "flight_number": "PR 733"
           },
           {
-            "airline": "China Southern",
+            "airline": "Philippine Airlines",
             "arrival_airport": {
               "id": "LAX",
               "name": "Los Angeles International Airport",
-              "time": "2027-01-03 18:30"
+              "time": "2027-01-04 19:10"
             },
             "departure_airport": {
-              "id": "CAN",
-              "name": "Guangzhou Baiyun International Airport",
-              "time": "2027-01-03 21:35"
+              "id": "MNL",
+              "name": "Ninoy Aquino International Airport",
+              "time": "2027-01-04 22:15"
             },
             "duration": 775,
-            "flight_number": "CZ 327"
+            "flight_number": "PR 102"
           }
         ]
       },
@@ -1033,210 +1133,10 @@
         [],
         []
       ],
-      "booking_token": "WyJDalJJU1ZBM1UyWnRaSEZXZGtGQlFWOWpNR2RDUnkwdExTMHRMUzB0ZVdsaVkyc3hPRUZCUVVGQlIzSnBjR2RWVEdScmNUSkJFZ3hLVERjeU9IeEtURFl3SXpFYUN3aitoeGtRQWhvRFZWTkVPQnh3L29jWiIsW1siTEFYIiwiMjAyNi0xMi0xOCIsIkNBTiIsbnVsbCwiQ1oiLCIzMjgiXSxbIkNBTiIsIjIwMjYtMTItMjAiLCJCS0siLG51bGwsIkNaIiwiODA5OSJdXSxbWyJCS0siLCIyMDI3LTAxLTAzIiwiS0lYIixudWxsLCJKTCIsIjcyOCJdLFsiS0lYIiwiMjAyNy0wMS0wMyIsIkxBWCIsbnVsbCwiSkwiLCI2MCJdXV0=",
-      "cohort": "69a348e034c26a5d07226645",
-      "id": "481fd97840b41325298fd7ba",
-      "observed_at": "2026-10-29T01:49:08.212354+00:00",
-      "outbound": {
-        "baggage_notes": [],
-        "layovers": [
-          {
-            "airport": "CAN",
-            "minutes": 305.0,
-            "overnight": false
-          }
-        ],
-        "minutes": 1435,
-        "segments": [
-          {
-            "airline": "China Southern",
-            "arrival_airport": {
-              "id": "CAN",
-              "name": "Guangzhou Baiyun International Airport",
-              "time": "2026-12-20 05:45"
-            },
-            "departure_airport": {
-              "id": "LAX",
-              "name": "Los Angeles International Airport",
-              "time": "2026-12-18 22:00"
-            },
-            "duration": 945,
-            "flight_number": "CZ 328"
-          },
-          {
-            "airline": "China Southern",
-            "arrival_airport": {
-              "id": "BKK",
-              "name": "Suvarnabhumi Airport",
-              "time": "2026-12-20 12:55"
-            },
-            "departure_airport": {
-              "id": "CAN",
-              "name": "Guangzhou Baiyun International Airport",
-              "time": "2026-12-20 10:50"
-            },
-            "duration": 185,
-            "flight_number": "CZ 8099"
-          }
-        ]
-      },
-      "price": 4107.0,
-      "protection": "unknown",
-      "return": {
-        "baggage_notes": [],
-        "layovers": [
-          {
-            "airport": "KIX",
-            "minutes": 585.0,
-            "overnight": false
-          }
-        ],
-        "minutes": 1520,
-        "segments": [
-          {
-            "airline": "JAL",
-            "arrival_airport": {
-              "id": "KIX",
-              "name": "Kansai International Airport",
-              "time": "2027-01-03 08:15"
-            },
-            "departure_airport": {
-              "id": "BKK",
-              "name": "Suvarnabhumi Airport",
-              "time": "2027-01-03 01:00"
-            },
-            "duration": 315,
-            "flight_number": "JL 728"
-          },
-          {
-            "airline": "JAL",
-            "arrival_airport": {
-              "id": "LAX",
-              "name": "Los Angeles International Airport",
-              "time": "2027-01-03 11:20"
-            },
-            "departure_airport": {
-              "id": "KIX",
-              "name": "Kansai International Airport",
-              "time": "2027-01-03 18:00"
-            },
-            "duration": 620,
-            "flight_number": "JL 60"
-          }
-        ]
-      },
-      "search_link": "https://www.google.com/travel/flights?q=Round+trip+LAX+to+BKK+2026-12-18+after+18%3A00+return+2027-01-03+1+adult+economy&curr=USD&hl=en",
-      "seller": "Not verified; compare airline-direct offers and check ticket terms before paying."
-    },
-    {
-      "baggage": [
-        [],
-        []
-      ],
-      "booking_token": "WyJDalJJU1ZBM1UyWnRaSEZXZGtGQlFWOWpNR2RDUnkwdExTMHRMUzB0ZVdsaVkyc3hPRUZCUVVGQlIzSnBjR2RWVEdScmNUSkJFZ2xLVERNMGZFcE1NVFlhQ3dpbGloa1FBaG9EVlZORU9CeHdwWW9aIixbWyJMQVgiLCIyMDI2LTEyLTE4IiwiQ0FOIixudWxsLCJDWiIsIjMyOCJdLFsiQ0FOIiwiMjAyNi0xMi0yMCIsIkJLSyIsbnVsbCwiQ1oiLCI4MDk5Il1dLFtbIkJLSyIsIjIwMjctMDEtMDMiLCJITkQiLG51bGwsIkpMIiwiMzQiXSxbIkhORCIsIjIwMjctMDEtMDQiLCJMQVgiLG51bGwsIkpMIiwiMTYiXV1d",
-      "cohort": "69a348e034c26a5d07226645",
-      "id": "3c0986f41cb949fa233961ab",
-      "observed_at": "2026-10-29T01:49:08.212355+00:00",
-      "outbound": {
-        "baggage_notes": [],
-        "layovers": [
-          {
-            "airport": "CAN",
-            "minutes": 305.0,
-            "overnight": false
-          }
-        ],
-        "minutes": 1435,
-        "segments": [
-          {
-            "airline": "China Southern",
-            "arrival_airport": {
-              "id": "CAN",
-              "name": "Guangzhou Baiyun International Airport",
-              "time": "2026-12-20 05:45"
-            },
-            "departure_airport": {
-              "id": "LAX",
-              "name": "Los Angeles International Airport",
-              "time": "2026-12-18 22:00"
-            },
-            "duration": 945,
-            "flight_number": "CZ 328"
-          },
-          {
-            "airline": "China Southern",
-            "arrival_airport": {
-              "id": "BKK",
-              "name": "Suvarnabhumi Airport",
-              "time": "2026-12-20 12:55"
-            },
-            "departure_airport": {
-              "id": "CAN",
-              "name": "Guangzhou Baiyun International Airport",
-              "time": "2026-12-20 10:50"
-            },
-            "duration": 185,
-            "flight_number": "CZ 8099"
-          }
-        ]
-      },
-      "price": 4110.0,
-      "protection": "unknown",
-      "return": {
-        "baggage_notes": [],
-        "layovers": [
-          {
-            "airport": "HND",
-            "minutes": 680.0,
-            "overnight": false
-          }
-        ],
-        "minutes": 1620,
-        "segments": [
-          {
-            "airline": "JAL",
-            "arrival_airport": {
-              "id": "HND",
-              "name": "Haneda Airport",
-              "time": "2027-01-04 05:45"
-            },
-            "departure_airport": {
-              "id": "BKK",
-              "name": "Suvarnabhumi Airport",
-              "time": "2027-01-03 22:05"
-            },
-            "duration": 340,
-            "flight_number": "JL 34"
-          },
-          {
-            "airline": "JAL",
-            "arrival_airport": {
-              "id": "LAX",
-              "name": "Los Angeles International Airport",
-              "time": "2027-01-04 10:05"
-            },
-            "departure_airport": {
-              "id": "HND",
-              "name": "Haneda Airport",
-              "time": "2027-01-04 17:05"
-            },
-            "duration": 600,
-            "flight_number": "JL 16"
-          }
-        ]
-      },
-      "search_link": "https://www.google.com/travel/flights?q=Round+trip+LAX+to+BKK+2026-12-18+after+18%3A00+return+2027-01-03+1+adult+economy&curr=USD&hl=en",
-      "seller": "Not verified; compare airline-direct offers and check ticket terms before paying."
-    },
-    {
-      "baggage": [
-        [],
-        []
-      ],
-      "booking_token": "WyJDalJJU2twQ1psWk9Xa2x0VW10QlFqRlZXSGRDUnkwdExTMHRMUzB0TFc5NVpISXhPRUZCUVVGQlIzSnBjR2QzVFZoTGRFZEJFZ3RRVWpjek0zeFFVakV3TWhvTENKV1pHeEFDR2dOVlUwUTRISENWbVJzPSIsW1siTEFYIiwiMjAyNi0xMi0xOCIsIk1OTCIsbnVsbCwiUFIiLCIxMDMiXSxbIk1OTCIsIjIwMjYtMTItMjAiLCJCS0siLG51bGwsIlBSIiwiNzMyIl1dLFtbIkJLSyIsIjIwMjctMDEtMDMiLCJNTkwiLG51bGwsIlBSIiwiNzMzIl0sWyJNTkwiLCIyMDI3LTAxLTA0IiwiTEFYIixudWxsLCJQUiIsIjEwMiJdXV0=",
+      "booking_token": "WyJDalJJZVc5RlJ6bEVjRE5ETm1kQlEyRXpjRUZDUnkwdExTMHRMUzB0Y0dwaVlYb3hOVUZCUVVGQlIzSnFVa0ZaU0hoblp5MUJFZ3RRVWpjek0zeFFVakV3TWhvTENKV1pHeEFDR2dOVlUwUTRISENWbVJzPSIsW1siTEFYIiwiMjAyNi0xMi0xOCIsIk1OTCIsbnVsbCwiUFIiLCIxMDMiXSxbIk1OTCIsIjIwMjYtMTItMjAiLCJCS0siLG51bGwsIlBSIiwiNzMyIl1dLFtbIkJLSyIsIjIwMjctMDEtMDMiLCJNTkwiLG51bGwsIlBSIiwiNzMzIl0sWyJNTkwiLCIyMDI3LTAxLTA0IiwiTEFYIixudWxsLCJQUiIsIjEwMiJdXV0=",
       "cohort": "e0faead97a94be66eca80a4a",
       "id": "bcdb8d45d643d0a60ab7e4d4",
-      "observed_at": "2026-10-29T01:49:08.212357+00:00",
+      "observed_at": "2026-10-29T13:03:05.069642+00:00",
       "outbound": {
         "baggage_notes": [],
         "layovers": [
@@ -1333,120 +1233,20 @@
         [],
         []
       ],
-      "booking_token": "WyJDalJJY2toNlFsOUpZa0ZmYkd0QlFsZ3dXVkZDUnkwdExTMHRMUzB0TFc5cllYY3hOVUZCUVVGQlIzSnBjR2hKUW10NmJWZEJFZ3BVU3pZNWZGUkxNVGM1R2dzSXZkQWJFQUlhQTFWVFJEZ2NjTDNRR3c9PSIsW1siTEFYIiwiMjAyNi0xMi0xOCIsIklTVCIsbnVsbCwiVEsiLCIxMCJdLFsiSVNUIiwiMjAyNi0xMi0yMCIsIkJLSyIsbnVsbCwiVEsiLCI2OCJdXSxbWyJCS0siLCIyMDI3LTAxLTAzIiwiSVNUIixudWxsLCJUSyIsIjY5Il0sWyJJU1QiLCIyMDI3LTAxLTA0IiwiTEFYIixudWxsLCJUSyIsIjE3OSJdXV0=",
-      "cohort": "c6e9dc4ba3c0594d8cf72347",
-      "id": "a93ed83b9c13d7122cd0d065",
-      "observed_at": "2026-10-29T01:49:08.212359+00:00",
-      "outbound": {
-        "baggage_notes": [],
-        "layovers": [
-          {
-            "airport": "IST",
-            "minutes": 405.0,
-            "overnight": true
-          }
-        ],
-        "minutes": 1775,
-        "segments": [
-          {
-            "airline": "Turkish Airlines",
-            "arrival_airport": {
-              "id": "IST",
-              "name": "Istanbul Airport",
-              "time": "2026-12-19 18:55"
-            },
-            "departure_airport": {
-              "id": "LAX",
-              "name": "Los Angeles International Airport",
-              "time": "2026-12-18 18:30"
-            },
-            "duration": 805,
-            "flight_number": "TK 10"
-          },
-          {
-            "airline": "Turkish Airlines",
-            "arrival_airport": {
-              "id": "BKK",
-              "name": "Suvarnabhumi Airport",
-              "time": "2026-12-20 15:05"
-            },
-            "departure_airport": {
-              "id": "IST",
-              "name": "Istanbul Airport",
-              "time": "2026-12-20 01:40"
-            },
-            "duration": 565,
-            "flight_number": "TK 68"
-          }
-        ]
-      },
-      "price": 4527.0,
-      "protection": "unknown",
-      "return": {
-        "baggage_notes": [],
-        "layovers": [
-          {
-            "airport": "IST",
-            "minutes": 125.0,
-            "overnight": false
-          }
-        ],
-        "minutes": 1600,
-        "segments": [
-          {
-            "airline": "Turkish Airlines",
-            "arrival_airport": {
-              "id": "IST",
-              "name": "Istanbul Airport",
-              "time": "2027-01-04 05:55"
-            },
-            "departure_airport": {
-              "id": "BKK",
-              "name": "Suvarnabhumi Airport",
-              "time": "2027-01-03 23:10"
-            },
-            "duration": 645,
-            "flight_number": "TK 69"
-          },
-          {
-            "airline": "Turkish Airlines",
-            "arrival_airport": {
-              "id": "LAX",
-              "name": "Los Angeles International Airport",
-              "time": "2027-01-04 10:50"
-            },
-            "departure_airport": {
-              "id": "IST",
-              "name": "Istanbul Airport",
-              "time": "2027-01-04 08:00"
-            },
-            "duration": 830,
-            "flight_number": "TK 179"
-          }
-        ]
-      },
-      "search_link": "https://www.google.com/travel/flights?q=Round+trip+LAX+to+BKK+2026-12-18+after+18%3A00+return+2027-01-03+1+adult+economy&curr=USD&hl=en",
-      "seller": "Not verified; compare airline-direct offers and check ticket terms before paying."
-    },
-    {
-      "baggage": [
-        [],
-        []
-      ],
-      "booking_token": "WyJDalJJU2twQ1psWk9Xa2x0VW10QlFqRlZXSGRDUnkwdExTMHRMUzB0TFc5NVpISXhPRUZCUVVGQlIzSnBjR2QzVFZoTGRFZEJFZzFRVWpjek1YeFFVakV3TWlNeEdnc0l0YlVjRUFJYUExVlRSRGdjY0xXMUhBPT0iLFtbIkxBWCIsIjIwMjYtMTItMTgiLCJNTkwiLG51bGwsIlBSIiwiMTAzIl0sWyJNTkwiLCIyMDI2LTEyLTIwIiwiQktLIixudWxsLCJQUiIsIjczMiJdXSxbWyJCS0siLCIyMDI3LTAxLTAzIiwiTU5MIixudWxsLCJQUiIsIjczMSJdLFsiTU5MIiwiMjAyNy0wMS0wMyIsIkxBWCIsbnVsbCwiUFIiLCIxMDIiXV1d",
-      "cohort": "0a20fc752e28b7d7004e2b44",
-      "id": "766e4be789343604b905b221",
-      "observed_at": "2026-10-29T01:49:08.212361+00:00",
+      "booking_token": "WyJDalJJWkc5aFltUjFWVWxFTVZGQlExWXlPWGRDUnkwdExTMHRMUzB0Y0dwaWEzQXhORUZCUVVGQlIzSnFVVjh3UTBVNFJHOUJFZ3RRVWpjek0zeFFVakV4TWhvTENMVzFIQkFDR2dOVlUwUTRISEMxdFJ3PSIsW1siTEFYIiwiMjAyNi0xMi0xOCIsIk1OTCIsbnVsbCwiUFIiLCIxMDMiXSxbIk1OTCIsIjIwMjYtMTItMjAiLCJCS0siLG51bGwsIlBSIiwiNzM2Il1dLFtbIkJLSyIsIjIwMjctMDEtMDMiLCJNTkwiLG51bGwsIlBSIiwiNzMzIl0sWyJNTkwiLCIyMDI3LTAxLTA0IiwiTEFYIixudWxsLCJQUiIsIjExMiJdXV0=",
+      "cohort": "9600939481351909c6384c09",
+      "id": "b8f406b8525efe22aaaf64bb",
+      "observed_at": "2026-10-29T13:03:05.069645+00:00",
       "outbound": {
         "baggage_notes": [],
         "layovers": [
           {
             "airport": "MNL",
-            "minutes": 875.0,
+            "minutes": 635.0,
             "overnight": false
           }
         ],
-        "minutes": 2020,
+        "minutes": 1780,
         "segments": [
           {
             "airline": "Philippine Airlines",
@@ -1468,15 +1268,15 @@
             "arrival_airport": {
               "id": "BKK",
               "name": "Suvarnabhumi Airport",
-              "time": "2026-12-20 22:45"
+              "time": "2026-12-20 18:45"
             },
             "departure_airport": {
               "id": "MNL",
               "name": "Ninoy Aquino International Airport",
-              "time": "2026-12-20 20:10"
+              "time": "2026-12-20 16:10"
             },
             "duration": 215,
-            "flight_number": "PR 732"
+            "flight_number": "PR 736"
           }
         ]
       },
@@ -1487,41 +1287,41 @@
         "layovers": [
           {
             "airport": "MNL",
-            "minutes": 275.0,
+            "minutes": 430.0,
             "overnight": false
           }
         ],
-        "minutes": 1260,
+        "minutes": 1405,
         "segments": [
           {
             "airline": "Philippine Airlines",
             "arrival_airport": {
               "id": "MNL",
               "name": "Ninoy Aquino International Airport",
-              "time": "2027-01-03 17:40"
+              "time": "2027-01-04 04:00"
             },
             "departure_airport": {
               "id": "BKK",
               "name": "Suvarnabhumi Airport",
-              "time": "2027-01-03 13:10"
+              "time": "2027-01-03 23:40"
             },
-            "duration": 210,
-            "flight_number": "PR 731"
+            "duration": 200,
+            "flight_number": "PR 733"
           },
           {
             "airline": "Philippine Airlines",
             "arrival_airport": {
               "id": "LAX",
               "name": "Los Angeles International Airport",
-              "time": "2027-01-03 19:10"
+              "time": "2027-01-04 08:05"
             },
             "departure_airport": {
               "id": "MNL",
               "name": "Ninoy Aquino International Airport",
-              "time": "2027-01-03 22:15"
+              "time": "2027-01-04 11:10"
             },
             "duration": 775,
-            "flight_number": "PR 102"
+            "flight_number": "PR 112"
           }
         ]
       },
@@ -1533,10 +1333,10 @@
         [],
         []
       ],
-      "booking_token": "WyJDalJJU2twQ1psWk9Xa2x0VW10QlFqRlZXSGRDUnkwdExTMHRMUzB0TFc5NVpISXhPRUZCUVVGQlIzSnBjR2QzVFZoTGRFZEJFZzFRVWpjek4zeFFVakV4TWlNeEdnc0l0YlVjRUFJYUExVlRSRGdjY0xXMUhBPT0iLFtbIkxBWCIsIjIwMjYtMTItMTgiLCJNTkwiLG51bGwsIlBSIiwiMTAzIl0sWyJNTkwiLCIyMDI2LTEyLTIwIiwiQktLIixudWxsLCJQUiIsIjczMiJdXSxbWyJCS0siLCIyMDI3LTAxLTAzIiwiTU5MIixudWxsLCJQUiIsIjczNyJdLFsiTU5MIiwiMjAyNy0wMS0wNCIsIkxBWCIsbnVsbCwiUFIiLCIxMTIiXV1d",
+      "booking_token": "WyJDalJJZVc5RlJ6bEVjRE5ETm1kQlEyRXpjRUZDUnkwdExTMHRMUzB0Y0dwaVlYb3hOVUZCUVVGQlIzSnFVa0ZaU0hoblp5MUJFZzFRVWpjek4zeFFVakV4TWlNeEdnc0l0YlVjRUFJYUExVlRSRGdjY0xXMUhBPT0iLFtbIkxBWCIsIjIwMjYtMTItMTgiLCJNTkwiLG51bGwsIlBSIiwiMTAzIl0sWyJNTkwiLCIyMDI2LTEyLTIwIiwiQktLIixudWxsLCJQUiIsIjczMiJdXSxbWyJCS0siLCIyMDI3LTAxLTAzIiwiTU5MIixudWxsLCJQUiIsIjczNyJdLFsiTU5MIiwiMjAyNy0wMS0wNCIsIkxBWCIsbnVsbCwiUFIiLCIxMTIiXV1d",
       "cohort": "1a0ea2b58a9bb8984ae84002",
       "id": "6647733c8b8f8a5fe95ac647",
-      "observed_at": "2026-10-29T01:49:08.212363+00:00",
+      "observed_at": "2026-10-29T13:03:05.069648+00:00",
       "outbound": {
         "baggage_notes": [],
         "layovers": [
@@ -1633,10 +1433,10 @@
         [],
         []
       ],
-      "booking_token": "WyJDalJJU2twQ1psWk9Xa2x0VW10QlFqRlZXSGRDUnkwdExTMHRMUzB0TFc5NVpISXhPRUZCUVVGQlIzSnBjR2QzVFZoTGRFZEJFZzFRVWpjek0zeFFVakV4TWlNeEdnc0l0YlVjRUFJYUExVlRSRGdjY0xXMUhBPT0iLFtbIkxBWCIsIjIwMjYtMTItMTgiLCJNTkwiLG51bGwsIlBSIiwiMTAzIl0sWyJNTkwiLCIyMDI2LTEyLTIwIiwiQktLIixudWxsLCJQUiIsIjczMiJdXSxbWyJCS0siLCIyMDI3LTAxLTAzIiwiTU5MIixudWxsLCJQUiIsIjczMyJdLFsiTU5MIiwiMjAyNy0wMS0wNCIsIkxBWCIsbnVsbCwiUFIiLCIxMTIiXV1d",
+      "booking_token": "WyJDalJJZVc5RlJ6bEVjRE5ETm1kQlEyRXpjRUZDUnkwdExTMHRMUzB0Y0dwaVlYb3hOVUZCUVVGQlIzSnFVa0ZaU0hoblp5MUJFZzFRVWpjek0zeFFVakV4TWlNeEdnc0l0YlVjRUFJYUExVlRSRGdjY0xXMUhBPT0iLFtbIkxBWCIsIjIwMjYtMTItMTgiLCJNTkwiLG51bGwsIlBSIiwiMTAzIl0sWyJNTkwiLCIyMDI2LTEyLTIwIiwiQktLIixudWxsLCJQUiIsIjczMiJdXSxbWyJCS0siLCIyMDI3LTAxLTAzIiwiTU5MIixudWxsLCJQUiIsIjczMyJdLFsiTU5MIiwiMjAyNy0wMS0wNCIsIkxBWCIsbnVsbCwiUFIiLCIxMTIiXV1d",
       "cohort": "0a20fc752e28b7d7004e2b44",
       "id": "06047ff6aa98a46051003187",
-      "observed_at": "2026-10-29T01:49:08.212365+00:00",
+      "observed_at": "2026-10-29T13:03:05.069652+00:00",
       "outbound": {
         "baggage_notes": [],
         "layovers": [
@@ -1733,495 +1533,295 @@
         [],
         []
       ],
-      "booking_token": "WyJDalJJU1ZBM1UyWnRaSEZXZGtGQlFWOWpNR2RDUnkwdExTMHRMUzB0ZVdsaVkyc3hPRUZCUVVGQlIzSnBjR2RWVEdScmNUSkJFZ3REU1Rnek5IeERTVGdqTVJvTENJek1IUkFDR2dOVlUwUTRISENNekIwPSIsW1siTEFYIiwiMjAyNi0xMi0xOCIsIkNBTiIsbnVsbCwiQ1oiLCIzMjgiXSxbIkNBTiIsIjIwMjYtMTItMjAiLCJCS0siLG51bGwsIkNaIiwiODA5OSJdXSxbWyJCS0siLCIyMDI3LTAxLTAzIiwiVFBFIixudWxsLCJDSSIsIjgzNCJdLFsiVFBFIiwiMjAyNy0wMS0wMyIsIkxBWCIsbnVsbCwiQ0kiLCI4Il1dXQ==",
-      "cohort": "8f51f6479e5e8dc4b3996985",
-      "id": "83731fcfd5a9e49f7cd10059",
-      "observed_at": "2026-10-29T01:49:08.212367+00:00",
+      "booking_token": "WyJDalJJZVc5RlJ6bEVjRE5ETm1kQlEyRXpjRUZDUnkwdExTMHRMUzB0Y0dwaVlYb3hOVUZCUVVGQlIzSnFVa0ZaU0hoblp5MUJFZzFRVWpjek1YeFFVakV3TWlNeEdnc0loY0lkRUFJYUExVlRSRGdjY0lYQ0hRPT0iLFtbIkxBWCIsIjIwMjYtMTItMTgiLCJNTkwiLG51bGwsIlBSIiwiMTAzIl0sWyJNTkwiLCIyMDI2LTEyLTIwIiwiQktLIixudWxsLCJQUiIsIjczMiJdXSxbWyJCS0siLCIyMDI3LTAxLTAzIiwiTU5MIixudWxsLCJQUiIsIjczMSJdLFsiTU5MIiwiMjAyNy0wMS0wMyIsIkxBWCIsbnVsbCwiUFIiLCIxMDIiXV1d",
+      "cohort": "0a20fc752e28b7d7004e2b44",
+      "id": "766e4be789343604b905b221",
+      "observed_at": "2026-10-29T13:03:05.069655+00:00",
       "outbound": {
         "baggage_notes": [],
         "layovers": [
           {
-            "airport": "CAN",
-            "minutes": 305.0,
+            "airport": "MNL",
+            "minutes": 875.0,
             "overnight": false
           }
         ],
-        "minutes": 1435,
+        "minutes": 2020,
         "segments": [
           {
-            "airline": "China Southern",
+            "airline": "Philippine Airlines",
             "arrival_airport": {
-              "id": "CAN",
-              "name": "Guangzhou Baiyun International Airport",
-              "time": "2026-12-20 05:45"
+              "id": "MNL",
+              "name": "Ninoy Aquino International Airport",
+              "time": "2026-12-20 05:35"
             },
             "departure_airport": {
               "id": "LAX",
               "name": "Los Angeles International Airport",
-              "time": "2026-12-18 22:00"
+              "time": "2026-12-18 22:05"
             },
-            "duration": 945,
-            "flight_number": "CZ 328"
+            "duration": 930,
+            "flight_number": "PR 103"
           },
           {
-            "airline": "China Southern",
+            "airline": "Philippine Airlines",
             "arrival_airport": {
               "id": "BKK",
               "name": "Suvarnabhumi Airport",
-              "time": "2026-12-20 12:55"
+              "time": "2026-12-20 22:45"
             },
             "departure_airport": {
-              "id": "CAN",
-              "name": "Guangzhou Baiyun International Airport",
-              "time": "2026-12-20 10:50"
-            },
-            "duration": 185,
-            "flight_number": "CZ 8099"
-          }
-        ]
-      },
-      "price": 4849.0,
-      "protection": "unknown",
-      "return": {
-        "baggage_notes": [],
-        "layovers": [
-          {
-            "airport": "TPE",
-            "minutes": 505.0,
-            "overnight": false
-          }
-        ],
-        "minutes": 1410,
-        "segments": [
-          {
-            "airline": "China Airlines",
-            "arrival_airport": {
-              "id": "TPE",
-              "name": "Taiwan Taoyuan International Airport",
-              "time": "2027-01-03 15:25"
-            },
-            "departure_airport": {
-              "id": "BKK",
-              "name": "Suvarnabhumi Airport",
-              "time": "2027-01-03 10:55"
-            },
-            "duration": 210,
-            "flight_number": "CI 834"
-          },
-          {
-            "airline": "China Airlines",
-            "arrival_airport": {
-              "id": "LAX",
-              "name": "Los Angeles International Airport",
-              "time": "2027-01-03 19:25"
-            },
-            "departure_airport": {
-              "id": "TPE",
-              "name": "Taiwan Taoyuan International Airport",
-              "time": "2027-01-03 23:50"
-            },
-            "duration": 695,
-            "flight_number": "CI 8"
-          }
-        ]
-      },
-      "search_link": "https://www.google.com/travel/flights?q=Round+trip+LAX+to+BKK+2026-12-18+after+18%3A00+return+2027-01-03+1+adult+economy&curr=USD&hl=en",
-      "seller": "Not verified; compare airline-direct offers and check ticket terms before paying."
-    },
-    {
-      "baggage": [
-        [],
-        []
-      ],
-      "booking_token": "WyJDalJJU1ZBM1UyWnRaSEZXZGtGQlFWOWpNR2RDUnkwdExTMHRMUzB0ZVdsaVkyc3hPRUZCUVVGQlIzSnBjR2RWVEdScmNUSkJFZ3REU1Rnek1ueERTVGdqTVJvTENJek1IUkFDR2dOVlUwUTRISENNekIwPSIsW1siTEFYIiwiMjAyNi0xMi0xOCIsIkNBTiIsbnVsbCwiQ1oiLCIzMjgiXSxbIkNBTiIsIjIwMjYtMTItMjAiLCJCS0siLG51bGwsIkNaIiwiODA5OSJdXSxbWyJCS0siLCIyMDI3LTAxLTAzIiwiVFBFIixudWxsLCJDSSIsIjgzMiJdLFsiVFBFIiwiMjAyNy0wMS0wMyIsIkxBWCIsbnVsbCwiQ0kiLCI4Il1dXQ==",
-      "cohort": "8f51f6479e5e8dc4b3996985",
-      "id": "8ba423e7ff7da168c9e767d5",
-      "observed_at": "2026-10-29T01:49:08.212369+00:00",
-      "outbound": {
-        "baggage_notes": [],
-        "layovers": [
-          {
-            "airport": "CAN",
-            "minutes": 305.0,
-            "overnight": false
-          }
-        ],
-        "minutes": 1435,
-        "segments": [
-          {
-            "airline": "China Southern",
-            "arrival_airport": {
-              "id": "CAN",
-              "name": "Guangzhou Baiyun International Airport",
-              "time": "2026-12-20 05:45"
-            },
-            "departure_airport": {
-              "id": "LAX",
-              "name": "Los Angeles International Airport",
-              "time": "2026-12-18 22:00"
-            },
-            "duration": 945,
-            "flight_number": "CZ 328"
-          },
-          {
-            "airline": "China Southern",
-            "arrival_airport": {
-              "id": "BKK",
-              "name": "Suvarnabhumi Airport",
-              "time": "2026-12-20 12:55"
-            },
-            "departure_airport": {
-              "id": "CAN",
-              "name": "Guangzhou Baiyun International Airport",
-              "time": "2026-12-20 10:50"
-            },
-            "duration": 185,
-            "flight_number": "CZ 8099"
-          }
-        ]
-      },
-      "price": 4849.0,
-      "protection": "unknown",
-      "return": {
-        "baggage_notes": [],
-        "layovers": [
-          {
-            "airport": "TPE",
-            "minutes": 310.0,
-            "overnight": false
-          }
-        ],
-        "minutes": 1220,
-        "segments": [
-          {
-            "airline": "China Airlines",
-            "arrival_airport": {
-              "id": "TPE",
-              "name": "Taiwan Taoyuan International Airport",
-              "time": "2027-01-03 18:40"
-            },
-            "departure_airport": {
-              "id": "BKK",
-              "name": "Suvarnabhumi Airport",
-              "time": "2027-01-03 14:05"
+              "id": "MNL",
+              "name": "Ninoy Aquino International Airport",
+              "time": "2026-12-20 20:10"
             },
             "duration": 215,
-            "flight_number": "CI 832"
-          },
-          {
-            "airline": "China Airlines",
-            "arrival_airport": {
-              "id": "LAX",
-              "name": "Los Angeles International Airport",
-              "time": "2027-01-03 19:25"
-            },
-            "departure_airport": {
-              "id": "TPE",
-              "name": "Taiwan Taoyuan International Airport",
-              "time": "2027-01-03 23:50"
-            },
-            "duration": 695,
-            "flight_number": "CI 8"
+            "flight_number": "PR 732"
           }
         ]
       },
-      "search_link": "https://www.google.com/travel/flights?q=Round+trip+LAX+to+BKK+2026-12-18+after+18%3A00+return+2027-01-03+1+adult+economy&curr=USD&hl=en",
-      "seller": "Not verified; compare airline-direct offers and check ticket terms before paying."
-    },
-    {
-      "baggage": [
-        [],
-        []
-      ],
-      "booking_token": "WyJDalJJU1ZBM1UyWnRaSEZXZGtGQlFWOWpNR2RDUnkwdExTMHRMUzB0ZVdsaVkyc3hPRUZCUVVGQlIzSnBjR2RWVEdScmNUSkJFZ3RVUnpZd01ueERXRGc0TUJvTENOM0NJaEFDR2dOVlUwUTRISERkd2lJPSIsW1siTEFYIiwiMjAyNi0xMi0xOCIsIkNBTiIsbnVsbCwiQ1oiLCIzMjgiXSxbIkNBTiIsIjIwMjYtMTItMjAiLCJCS0siLG51bGwsIkNaIiwiODA5OSJdXSxbWyJCS0siLCIyMDI3LTAxLTAzIiwiSEtHIixudWxsLCJURyIsIjYwMiJdLFsiSEtHIiwiMjAyNy0wMS0wNCIsIkxBWCIsbnVsbCwiQ1giLCI4ODAiXV1d",
-      "cohort": "0df8eb1ce3619b7e7bb58aad",
-      "id": "3c884d80adef0caef6de7574",
-      "observed_at": "2026-10-29T01:49:08.212371+00:00",
-      "outbound": {
-        "baggage_notes": [],
-        "layovers": [
-          {
-            "airport": "CAN",
-            "minutes": 305.0,
-            "overnight": false
-          }
-        ],
-        "minutes": 1435,
-        "segments": [
-          {
-            "airline": "China Southern",
-            "arrival_airport": {
-              "id": "CAN",
-              "name": "Guangzhou Baiyun International Airport",
-              "time": "2026-12-20 05:45"
-            },
-            "departure_airport": {
-              "id": "LAX",
-              "name": "Los Angeles International Airport",
-              "time": "2026-12-18 22:00"
-            },
-            "duration": 945,
-            "flight_number": "CZ 328"
-          },
-          {
-            "airline": "China Southern",
-            "arrival_airport": {
-              "id": "BKK",
-              "name": "Suvarnabhumi Airport",
-              "time": "2026-12-20 12:55"
-            },
-            "departure_airport": {
-              "id": "CAN",
-              "name": "Guangzhou Baiyun International Airport",
-              "time": "2026-12-20 10:50"
-            },
-            "duration": 185,
-            "flight_number": "CZ 8099"
-          }
-        ]
-      },
-      "price": 5656.0,
+      "price": 4836.0,
       "protection": "unknown",
       "return": {
         "baggage_notes": [],
         "layovers": [
           {
-            "airport": "HKG",
-            "minutes": 155.0,
-            "overnight": true
-          }
-        ],
-        "minutes": 1075,
-        "segments": [
-          {
-            "airline": "THAI",
-            "arrival_airport": {
-              "id": "HKG",
-              "name": "Hong Kong International Airport",
-              "time": "2027-01-03 21:55"
-            },
-            "departure_airport": {
-              "id": "BKK",
-              "name": "Suvarnabhumi Airport",
-              "time": "2027-01-03 18:10"
-            },
-            "duration": 165,
-            "flight_number": "TG 602"
-          },
-          {
-            "airline": "Cathay Pacific",
-            "arrival_airport": {
-              "id": "LAX",
-              "name": "Los Angeles International Airport",
-              "time": "2027-01-03 21:05"
-            },
-            "departure_airport": {
-              "id": "HKG",
-              "name": "Hong Kong International Airport",
-              "time": "2027-01-04 00:30"
-            },
-            "duration": 755,
-            "flight_number": "CX 880"
-          }
-        ]
-      },
-      "search_link": "https://www.google.com/travel/flights?q=Round+trip+LAX+to+BKK+2026-12-18+after+18%3A00+return+2027-01-03+1+adult+economy&curr=USD&hl=en",
-      "seller": "Not verified; compare airline-direct offers and check ticket terms before paying."
-    },
-    {
-      "baggage": [
-        [],
-        []
-      ],
-      "booking_token": "WyJDalJJU1ZBM1UyWnRaSEZXZGtGQlFWOWpNR2RDUnkwdExTMHRMUzB0ZVdsaVkyc3hPRUZCUVVGQlIzSnBjR2RWVEdScmNUSkJFZzFEV0Rjd05ueERXRGc0TUNNeEdnc0l2TU1pRUFJYUExVlRSRGdjY0x6RElnPT0iLFtbIkxBWCIsIjIwMjYtMTItMTgiLCJDQU4iLG51bGwsIkNaIiwiMzI4Il0sWyJDQU4iLCIyMDI2LTEyLTIwIiwiQktLIixudWxsLCJDWiIsIjgwOTkiXV0sW1siQktLIiwiMjAyNy0wMS0wMyIsIkhLRyIsbnVsbCwiQ1giLCI3MDYiXSxbIkhLRyIsIjIwMjctMDEtMDQiLCJMQVgiLG51bGwsIkNYIiwiODgwIl1dXQ==",
-      "cohort": "60fcea71d0aeb7ddc7f309a6",
-      "id": "3b81ecb9137f671c71bd45a7",
-      "observed_at": "2026-10-29T01:49:08.212373+00:00",
-      "outbound": {
-        "baggage_notes": [],
-        "layovers": [
-          {
-            "airport": "CAN",
-            "minutes": 305.0,
+            "airport": "MNL",
+            "minutes": 275.0,
             "overnight": false
           }
         ],
-        "minutes": 1435,
+        "minutes": 1260,
         "segments": [
           {
-            "airline": "China Southern",
+            "airline": "Philippine Airlines",
             "arrival_airport": {
-              "id": "CAN",
-              "name": "Guangzhou Baiyun International Airport",
-              "time": "2026-12-20 05:45"
-            },
-            "departure_airport": {
-              "id": "LAX",
-              "name": "Los Angeles International Airport",
-              "time": "2026-12-18 22:00"
-            },
-            "duration": 945,
-            "flight_number": "CZ 328"
-          },
-          {
-            "airline": "China Southern",
-            "arrival_airport": {
-              "id": "BKK",
-              "name": "Suvarnabhumi Airport",
-              "time": "2026-12-20 12:55"
-            },
-            "departure_airport": {
-              "id": "CAN",
-              "name": "Guangzhou Baiyun International Airport",
-              "time": "2026-12-20 10:50"
-            },
-            "duration": 185,
-            "flight_number": "CZ 8099"
-          }
-        ]
-      },
-      "price": 5657.0,
-      "protection": "unknown",
-      "return": {
-        "baggage_notes": [],
-        "layovers": [
-          {
-            "airport": "HKG",
-            "minutes": 220.0,
-            "overnight": true
-          }
-        ],
-        "minutes": 1145,
-        "segments": [
-          {
-            "airline": "Cathay Pacific",
-            "arrival_airport": {
-              "id": "HKG",
-              "name": "Hong Kong International Airport",
-              "time": "2027-01-03 20:50"
+              "id": "MNL",
+              "name": "Ninoy Aquino International Airport",
+              "time": "2027-01-03 17:40"
             },
             "departure_airport": {
               "id": "BKK",
               "name": "Suvarnabhumi Airport",
-              "time": "2027-01-03 17:00"
+              "time": "2027-01-03 13:10"
             },
-            "duration": 170,
-            "flight_number": "CX 706"
+            "duration": 210,
+            "flight_number": "PR 731"
           },
           {
-            "airline": "Cathay Pacific",
+            "airline": "Philippine Airlines",
             "arrival_airport": {
               "id": "LAX",
               "name": "Los Angeles International Airport",
-              "time": "2027-01-03 21:05"
+              "time": "2027-01-03 19:10"
             },
             "departure_airport": {
-              "id": "HKG",
-              "name": "Hong Kong International Airport",
-              "time": "2027-01-04 00:30"
-            },
-            "duration": 755,
-            "flight_number": "CX 880"
-          }
-        ]
-      },
-      "search_link": "https://www.google.com/travel/flights?q=Round+trip+LAX+to+BKK+2026-12-18+after+18%3A00+return+2027-01-03+1+adult+economy&curr=USD&hl=en",
-      "seller": "Not verified; compare airline-direct offers and check ticket terms before paying."
-    },
-    {
-      "baggage": [
-        [],
-        []
-      ],
-      "booking_token": "WyJDalJJU1ZBM1UyWnRaSEZXZGtGQlFWOWpNR2RDUnkwdExTMHRMUzB0ZVdsaVkyc3hPRUZCUVVGQlIzSnBjR2RWVEdScmNUSkJFZzFEV2pNMU9IeERXak15TnlNeEdnc0k2ZlFpRUFJYUExVlRSRGdjY09uMElnPT0iLFtbIkxBWCIsIjIwMjYtMTItMTgiLCJDQU4iLG51bGwsIkNaIiwiMzI4Il0sWyJDQU4iLCIyMDI2LTEyLTIwIiwiQktLIixudWxsLCJDWiIsIjgwOTkiXV0sW1siQktLIiwiMjAyNy0wMS0wMyIsIkNBTiIsbnVsbCwiQ1oiLCIzNTgiXSxbIkNBTiIsIjIwMjctMDEtMDMiLCJMQVgiLG51bGwsIkNaIiwiMzI3Il1dXQ==",
-      "cohort": "8f51f6479e5e8dc4b3996985",
-      "id": "f2d933bbf6a5295d60155dbd",
-      "observed_at": "2026-10-29T01:49:08.212375+00:00",
-      "outbound": {
-        "baggage_notes": [],
-        "layovers": [
-          {
-            "airport": "CAN",
-            "minutes": 305.0,
-            "overnight": false
-          }
-        ],
-        "minutes": 1435,
-        "segments": [
-          {
-            "airline": "China Southern",
-            "arrival_airport": {
-              "id": "CAN",
-              "name": "Guangzhou Baiyun International Airport",
-              "time": "2026-12-20 05:45"
-            },
-            "departure_airport": {
-              "id": "LAX",
-              "name": "Los Angeles International Airport",
-              "time": "2026-12-18 22:00"
-            },
-            "duration": 945,
-            "flight_number": "CZ 328"
-          },
-          {
-            "airline": "China Southern",
-            "arrival_airport": {
-              "id": "BKK",
-              "name": "Suvarnabhumi Airport",
-              "time": "2026-12-20 12:55"
-            },
-            "departure_airport": {
-              "id": "CAN",
-              "name": "Guangzhou Baiyun International Airport",
-              "time": "2026-12-20 10:50"
-            },
-            "duration": 185,
-            "flight_number": "CZ 8099"
-          }
-        ]
-      },
-      "price": 5721.0,
-      "protection": "unknown",
-      "return": {
-        "baggage_notes": [],
-        "layovers": [
-          {
-            "airport": "CAN",
-            "minutes": 375.0,
-            "overnight": false
-          }
-        ],
-        "minutes": 1325,
-        "segments": [
-          {
-            "airline": "China Southern",
-            "arrival_airport": {
-              "id": "CAN",
-              "name": "Guangzhou Baiyun International Airport",
-              "time": "2027-01-03 15:20"
-            },
-            "departure_airport": {
-              "id": "BKK",
-              "name": "Suvarnabhumi Airport",
-              "time": "2027-01-03 11:25"
-            },
-            "duration": 175,
-            "flight_number": "CZ 358"
-          },
-          {
-            "airline": "China Southern",
-            "arrival_airport": {
-              "id": "LAX",
-              "name": "Los Angeles International Airport",
-              "time": "2027-01-03 18:30"
-            },
-            "departure_airport": {
-              "id": "CAN",
-              "name": "Guangzhou Baiyun International Airport",
-              "time": "2027-01-03 21:35"
+              "id": "MNL",
+              "name": "Ninoy Aquino International Airport",
+              "time": "2027-01-03 22:15"
             },
             "duration": 775,
-            "flight_number": "CZ 327"
+            "flight_number": "PR 102"
+          }
+        ]
+      },
+      "search_link": "https://www.google.com/travel/flights?q=Round+trip+LAX+to+BKK+2026-12-18+after+18%3A00+return+2027-01-03+1+adult+economy&curr=USD&hl=en",
+      "seller": "Not verified; compare airline-direct offers and check ticket terms before paying."
+    },
+    {
+      "baggage": [
+        [],
+        []
+      ],
+      "booking_token": "WyJDalJJV1VwSlVWaHhNMG95TW5kQlJERjFVR2RDUnkwdExTMHRkbmRpYlc0eE15MXVNa0ZCUVVGQlIzSnFVUzA0VDJocmFtTkJFZ3hLVERjeU9IeEtURFl3SXpFYUN3aTV3aWNRQWhvRFZWTkVPQnh3dWNJbiIsW1siTEFYIiwiMjAyNi0xMi0xOCIsIklDTiIsbnVsbCwiT1oiLCIyMDMiXSxbIklDTiIsIjIwMjYtMTItMjAiLCJCS0siLG51bGwsIktFIiwiNjU3Il1dLFtbIkJLSyIsIjIwMjctMDEtMDMiLCJLSVgiLG51bGwsIkpMIiwiNzI4Il0sWyJLSVgiLCIyMDI3LTAxLTAzIiwiTEFYIixudWxsLCJKTCIsIjYwIl1dXQ==",
+      "cohort": "69a348e034c26a5d07226645",
+      "id": "089fdbbc80294881d6274d9b",
+      "observed_at": "2026-10-29T13:03:05.069658+00:00",
+      "outbound": {
+        "baggage_notes": [],
+        "layovers": [
+          {
+            "airport": "ICN",
+            "minutes": 185.0,
+            "overnight": false
+          }
+        ],
+        "minutes": 1355,
+        "segments": [
+          {
+            "airline": "Asiana Airlines",
+            "arrival_airport": {
+              "id": "ICN",
+              "name": "Incheon International Airport",
+              "time": "2026-12-20 06:10"
+            },
+            "departure_airport": {
+              "id": "LAX",
+              "name": "Los Angeles International Airport",
+              "time": "2026-12-18 23:50"
+            },
+            "duration": 800,
+            "flight_number": "OZ 203"
+          },
+          {
+            "airline": "Korean Air",
+            "arrival_airport": {
+              "id": "BKK",
+              "name": "Suvarnabhumi Airport",
+              "time": "2026-12-20 13:25"
+            },
+            "departure_airport": {
+              "id": "ICN",
+              "name": "Incheon International Airport",
+              "time": "2026-12-20 09:15"
+            },
+            "duration": 370,
+            "flight_number": "KE 657"
+          }
+        ]
+      },
+      "price": 6475.0,
+      "protection": "unknown",
+      "return": {
+        "baggage_notes": [],
+        "layovers": [
+          {
+            "airport": "KIX",
+            "minutes": 585.0,
+            "overnight": false
+          }
+        ],
+        "minutes": 1520,
+        "segments": [
+          {
+            "airline": "JAL",
+            "arrival_airport": {
+              "id": "KIX",
+              "name": "Kansai International Airport",
+              "time": "2027-01-03 08:15"
+            },
+            "departure_airport": {
+              "id": "BKK",
+              "name": "Suvarnabhumi Airport",
+              "time": "2027-01-03 01:00"
+            },
+            "duration": 315,
+            "flight_number": "JL 728"
+          },
+          {
+            "airline": "JAL",
+            "arrival_airport": {
+              "id": "LAX",
+              "name": "Los Angeles International Airport",
+              "time": "2027-01-03 11:20"
+            },
+            "departure_airport": {
+              "id": "KIX",
+              "name": "Kansai International Airport",
+              "time": "2027-01-03 18:00"
+            },
+            "duration": 620,
+            "flight_number": "JL 60"
+          }
+        ]
+      },
+      "search_link": "https://www.google.com/travel/flights?q=Round+trip+LAX+to+BKK+2026-12-18+after+18%3A00+return+2027-01-03+1+adult+economy&curr=USD&hl=en",
+      "seller": "Not verified; compare airline-direct offers and check ticket terms before paying."
+    },
+    {
+      "baggage": [
+        [],
+        []
+      ],
+      "booking_token": "WyJDalJJVmw5eFZHVXpWbFpITkhOQlJHZzNZa0ZDUnkwdExTMHRMUzB0ZG5kaVpYY3hPRUZCUVVGQlIzSnFVVjlaU2xwU2IwOUJFZ3hLVERjeU9IeEtURFl3SXpFYUN3aTV3aWNRQWhvRFZWTkVPQnh3dWNJbiIsW1siTEFYIiwiMjAyNi0xMi0xOCIsIklDTiIsbnVsbCwiT1oiLCIyMDMiXSxbIklDTiIsIjIwMjYtMTItMjAiLCJCS0siLG51bGwsIktFIiwiNjUxIl1dLFtbIkJLSyIsIjIwMjctMDEtMDMiLCJLSVgiLG51bGwsIkpMIiwiNzI4Il0sWyJLSVgiLCIyMDI3LTAxLTAzIiwiTEFYIixudWxsLCJKTCIsIjYwIl1dXQ==",
+      "cohort": "1a0ea2b58a9bb8984ae84002",
+      "id": "a83736ad3e70889d72bf4d61",
+      "observed_at": "2026-10-29T13:03:05.069661+00:00",
+      "outbound": {
+        "baggage_notes": [],
+        "layovers": [
+          {
+            "airport": "ICN",
+            "minutes": 670.0,
+            "overnight": false
+          }
+        ],
+        "minutes": 1840,
+        "segments": [
+          {
+            "airline": "Asiana Airlines",
+            "arrival_airport": {
+              "id": "ICN",
+              "name": "Incheon International Airport",
+              "time": "2026-12-20 06:10"
+            },
+            "departure_airport": {
+              "id": "LAX",
+              "name": "Los Angeles International Airport",
+              "time": "2026-12-18 23:50"
+            },
+            "duration": 800,
+            "flight_number": "OZ 203"
+          },
+          {
+            "airline": "Korean Air",
+            "arrival_airport": {
+              "id": "BKK",
+              "name": "Suvarnabhumi Airport",
+              "time": "2026-12-20 21:30"
+            },
+            "departure_airport": {
+              "id": "ICN",
+              "name": "Incheon International Airport",
+              "time": "2026-12-20 17:20"
+            },
+            "duration": 370,
+            "flight_number": "KE 651"
+          }
+        ]
+      },
+      "price": 6475.0,
+      "protection": "unknown",
+      "return": {
+        "baggage_notes": [],
+        "layovers": [
+          {
+            "airport": "KIX",
+            "minutes": 585.0,
+            "overnight": false
+          }
+        ],
+        "minutes": 1520,
+        "segments": [
+          {
+            "airline": "JAL",
+            "arrival_airport": {
+              "id": "KIX",
+              "name": "Kansai International Airport",
+              "time": "2027-01-03 08:15"
+            },
+            "departure_airport": {
+              "id": "BKK",
+              "name": "Suvarnabhumi Airport",
+              "time": "2027-01-03 01:00"
+            },
+            "duration": 315,
+            "flight_number": "JL 728"
+          },
+          {
+            "airline": "JAL",
+            "arrival_airport": {
+              "id": "LAX",
+              "name": "Los Angeles International Airport",
+              "time": "2027-01-03 11:20"
+            },
+            "departure_airport": {
+              "id": "KIX",
+              "name": "Kansai International Airport",
+              "time": "2027-01-03 18:00"
+            },
+            "duration": 620,
+            "flight_number": "JL 60"
           }
         ]
       },
@@ -2231,19 +1831,15 @@
   ],
   "last_scheduled_observation_at": "2026-10-29T01:48:39.721635+00:00",
   "last_search": {
-    "at": "2026-10-29T01:49:08.212289+00:00",
-    "complete_candidates": 42,
+    "at": "2026-10-29T13:03:05.069575+00:00",
+    "complete_candidates": 16,
     "outbounds_expanded": 4,
-    "outbounds_found": 95,
-    "outbounds_usable": 40,
+    "outbounds_found": 106,
+    "outbounds_usable": 43,
     "protection": "unknown",
     "provider_price_insights": {
-      "lowest_price": 3528,
+      "lowest_price": 3525,
       "price_history": [
-        [
-          1787986800,
-          2140
-        ],
         [
           1788073200,
           2140
@@ -2482,7 +2078,11 @@
         ],
         [
           1793170800,
-          3528
+          3045
+        ],
+        [
+          1793257200,
+          3525
         ]
       ],
       "price_level": "high",
@@ -2492,9 +2092,8 @@
       ]
     },
     "rejections": {
-      "airport change": 2,
-      "connection below configured minimum": 20,
-      "outbound before local cutoff": 48
+      "connection below configured minimum": 16,
+      "outbound before local cutoff": 55
     }
   },
   "observations": [
