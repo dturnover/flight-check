@@ -53,6 +53,16 @@ class FareTests(unittest.TestCase):
         self.out['flights'][0]['departure_airport']['time'] = '2026-12-18 17:59'
         with self.assertRaises(ValueError): self.fare()
 
+    def test_workweek_travel_rejected(self):
+        # Lands LAX Monday Jan 4 local time: inside the workweek.
+        self.ret['flights'][-1]['arrival_airport']['time'] = '2027-01-04 06:40'
+        with self.assertRaises(ValueError): self.fare()
+
+    def test_saturday_daytime_departure_allowed(self):
+        self.c['outbound_date'] = '2026-12-19'
+        self.out['flights'][0]['departure_airport']['time'] = '2026-12-19 09:00'
+        self.fare()
+
     def test_wrong_return_date(self):
         self.ret['flights'][0]['departure_airport']['time'] = '2027-01-04 08:00'
         with self.assertRaises(ValueError): self.fare()

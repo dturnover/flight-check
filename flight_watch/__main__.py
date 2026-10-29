@@ -12,11 +12,13 @@ from .runtime import Delivery, Failure, Search, State, delivered, now_utc
 
 
 def validate(c):
-    expected = {'origin': 'LAX', 'destination': 'BKK', 'outbound_date': '2026-12-18',
-                'outbound_after': '18:00', 'return_date': '2027-01-03', 'adults': 1,
+    expected = {'origin': 'LAX', 'destination': 'BKK', 'outbound_after': '18:00', 'adults': 1,
                 'currency': 'USD', 'market': 'us', 'cabin': 1}
     if any(c.get(k) != v for k, v in expected.items()):
         raise Failure('Fixed trip or comparison settings changed; review adapter before running.')
+    allowed = {('2026-12-18', '2027-01-02'), ('2026-12-18', '2027-01-03'), ('2026-12-19', '2027-01-02'), ('2026-12-19', '2027-01-03')}
+    if not c['date_options'] or any(tuple(d) not in allowed for d in c['date_options']):
+        raise Failure('Date options changed; review adapter before running.')
     if c['allow_unknown_protection'] not in (None, True, False):
         raise Failure('Invalid protection preference')
     if not 1 <= c['outbound_choices'] <= 4 or c['max_api_calls_per_run'] > 7 or c['max_api_calls_per_rolling_31_days'] > 240:
@@ -53,7 +55,7 @@ def collect(config, state, search):
                 results.append((fare, outbound))
             except (ValueError, KeyError, TypeError) as e:
                 rejected[str(e) if isinstance(e, ValueError) else 'invalid return schema'] += 1
-    state.data['last_search'] = {'at': now_utc().isoformat(), 'outbounds_found': len(rows(initial)),
+    state.data['last_search'] = {'at': now_utc().isoformat(), 'dates': [config['outbound_date'], config['return_date']], 'outbounds_found': len(rows(initial)),
         'outbounds_usable': len(usable), 'outbounds_expanded': len(selected),
         'complete_candidates': len(results), 'rejections': dict(rejected),
         # Provider insights are contextual, not our baseline or exact-itinerary history.
@@ -82,6 +84,12 @@ def run(config, state, search, delivery, notify):
                 delivery.send(a)
         if any(r.get('status') in ('uncertain', 'attempting', 'failed', 'undelivered', 'bounced', 'complained') for a in state.data['alerts'] for r in a.get('receipts', {}).values()):
             raise Failure('A delivery needs operator attention; inspect private receipts.')
+    # One date combination per run keeps each run within the per-run search budget.
+    i = state.data.get('date_option_index', 0)
+    config = dict(config, outbound_date=config['date_options'][i % len(config['date_options'])][0],
+                  return_date=config['date_options'][i % len(config['date_options'])][1])
+    search.config = config
+    state.data['date_option_index'] = i + 1
     results = collect(config, state, search)
     prior = list(state.data['observations'])
     for fare, _ in results:
@@ -130,7 +138,7 @@ def run(config, state, search, delivery, notify):
                  'id': fare['id'], 'cohort': fare['cohort'], 'price': fare['price'], 'at': now.isoformat(),
                  'subject': f"Flight Watch: ${fare['price']:.0f} round trip (manual review)",
                  'body': message(fare, why, config),
-                 'sms': f"Flight Watch: USD {fare['price']:.0f} total round trip, 1 adult {config['origin']}-{config['destination']} Dec 18 after 6pm / Jan 3. Protection UNKNOWN: manual review. Full itinerary, baggage caveats and search link in your email. " + why,
+                 'sms': f"Flight Watch: USD {fare['price']:.0f} total round trip, 1 adult {config['origin']}-{config['destination']} {config['outbound_date']} / {config['return_date']}. Protection UNKNOWN: manual review. Full itinerary, baggage caveats and search link in your email. " + why,
                  'receipts': {}}
         # Force short GSM-compatible SMS to bound segment costs (max 3 segments).
         alert['sms'] = alert['sms'].encode('ascii', 'replace').decode()[:450]
@@ -149,7 +157,7 @@ def scheduled(config, state, search, delivery):
     started = state.data.get('baseline_started_at')
     collecting = started is None or now - datetime.fromisoformat(started) < timedelta(hours=72)
     last = state.data.get('last_scheduled_observation_at')
-    interval = timedelta(hours=7 if collecting else 23)
+    interval = timedelta(hours=7 if collecting else 11)
     if last and now - datetime.fromisoformat(last) < interval:
         return 'next scheduled observation not due'
     # Baseline collection must work before messaging setup or protection consent.

@@ -5,6 +5,10 @@ import math
 import statistics
 from datetime import datetime, timedelta, timezone
 from urllib.parse import urlencode
+from zoneinfo import ZoneInfo
+
+WORK_TZ = ZoneInfo('America/Los_Angeles')
+AIRPORT_TZ = {'LAX': 'America/Los_Angeles', 'BKK': 'Asia/Bangkok'}
 
 
 def digest(value):
@@ -27,6 +31,14 @@ def unsafe(value):
     return False
 
 
+def off_work(local, airport, config):
+    """Outside the Mon-Fri Los Angeles workweek; Friday ends at outbound_after."""
+    if airport not in AIRPORT_TZ:
+        raise ValueError('unknown airport timezone')
+    t = local.replace(tzinfo=ZoneInfo(AIRPORT_TZ[airport])).astimezone(WORK_TZ)
+    return t.weekday() >= 5 or (t.weekday() == 4 and t.strftime('%H:%M') >= config['outbound_after'])
+
+
 def leg(raw, origin, destination, day, config, outbound=False):
     flights = raw.get('flights', [])
     if not flights or unsafe(raw):
@@ -36,11 +48,13 @@ def leg(raw, origin, destination, day, config, outbound=False):
     departure = datetime.fromisoformat(flights[0]['departure_airport']['time'])
     if departure.date().isoformat() != day:
         raise ValueError('wrong departure date')
-    if outbound and departure.strftime('%H:%M') < config['outbound_after']:
-        raise ValueError('outbound before local cutoff')
     duration = raw.get('total_duration', 0)
     if not 0 < duration <= config['max_leg_hours'] * 60:
         raise ValueError('missing or excessive duration')
+    # Weekend windows are 114 hours apart, so two off-work ends of a <=60h leg share one weekend.
+    arrival = datetime.fromisoformat(flights[-1]['arrival_airport']['time'])
+    if not (off_work(departure, origin, config) and off_work(arrival, destination, config)):
+        raise ValueError('travel during the workweek')
     layovers = []
     for prev, nxt in zip(flights, flights[1:]):
         a, b = prev['arrival_airport'], nxt['departure_airport']
@@ -70,7 +84,7 @@ def candidate(outbound, inbound, config):
     bags = [out['baggage_notes'], ret['baggage_notes']]
     # SerpApi has no documented contractual protection evidence: always unknown.
     # No inference from airlines, a single result, or absence of a warning.
-    cohort = digest({'stops': [len(x['layovers']) for x in [out, ret]],
+    cohort = digest({'dates': [config['outbound_date'], config['return_date']], 'stops': [len(x['layovers']) for x in [out, ret]],
                      'duration_6h_bands': [int(x['minutes'] // 360) for x in [out, ret]],
                      'overnights': [sum(l['overnight'] for l in x['layovers']) for x in [out, ret]],
                      'bags': bags, 'protection': 'unknown', 'currency': config['currency']})
