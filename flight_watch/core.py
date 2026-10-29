@@ -88,7 +88,7 @@ def candidate(outbound, inbound, config):
                      'duration_6h_bands': [int(x['minutes'] // 360) for x in [out, ret]],
                      'overnights': [sum(l['overnight'] for l in x['layovers']) for x in [out, ret]],
                      'bags': bags, 'protection': 'unknown', 'currency': config['currency']})
-    query = f"Round trip {config['origin']} to {config['destination']} {config['outbound_date']} after {config['outbound_after']} return {config['return_date']} 1 adult economy"
+    query = f"Round trip {config['origin']} to {config['destination']} {config['outbound_date']} return {config['return_date']} 1 adult economy"
     return {'id': digest(identity), 'cohort': cohort, 'price': float(price), 'outbound': out, 'return': ret,
             'protection': 'unknown', 'baggage': bags, 'booking_token': inbound.get('booking_token'),
             'search_link': 'https://www.google.com/travel/flights?' + urlencode({'q': query, 'curr': config['currency'], 'hl': 'en'}),
