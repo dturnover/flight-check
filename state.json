@@ -4633,6 +4633,11 @@
       "at": "2026-10-29T22:38:30.238326+00:00",
       "command": "stop",
       "status": "stopped"
+    },
+    {
+      "at": "2026-10-30T01:57:59.367134+00:00",
+      "command": "scheduled",
+      "status": "stopped"
     }
   ],
   "stopped": true,
