@@ -4923,6 +4923,11 @@
       "at": "2026-11-23T18:10:17.689925+00:00",
       "command": "scheduled",
       "status": "stopped"
+    },
+    {
+      "at": "2026-11-24T06:04:07.219470+00:00",
+      "command": "scheduled",
+      "status": "stopped"
     }
   ],
   "stopped": true,
